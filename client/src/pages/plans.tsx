@@ -117,11 +117,11 @@ export default function PlansPage() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-blue-700">
+        <section className="py-20 bg-gradient-to-br from-background via-primary to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center text-white">
-              <h1 className="text-5xl font-bold mb-6">Nossos Planos</h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <div className="text-center text-foreground">
+              <h1 className="text-5xl font-bold mb-6 text-foreground">Nossos Planos</h1>
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-muted-foreground">
                 Escolha o plano ideal para sua empresa e tenha acesso aos melhores serviços contábeis de Angola
               </p>
             </div>
@@ -131,49 +131,49 @@ export default function PlansPage() {
         <Plans />
 
         {/* Detailed Comparison */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Comparação Detalhada dos Planos
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Veja em detalhes o que cada plano oferece
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="bg-background rounded-xl shadow-lg overflow-hidden border border-border">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-gray-50">
+                  <thead className="bg-card">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-4 text-left text-sm font-medium text-muted-foreground uppercase tracking-wider">
                         Funcionalidades
                       </th>
-                      <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-4 text-center text-sm font-medium text-muted-foreground uppercase tracking-wider">
                         Plano Básico
                       </th>
-                      <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-4 text-center text-sm font-medium text-muted-foreground uppercase tracking-wider">
                         Plano Médio
                       </th>
-                      <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-6 py-4 text-center text-sm font-medium text-muted-foreground uppercase tracking-wider">
                         Plano Avançado
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="bg-white divide-y divide-gray-200">
+                  <tbody className="bg-background divide-y divide-border">
                     {planComparison.map((item, index) => (
-                      <tr key={index} className="hover:bg-gray-50">
-                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                      <tr key={index} className="hover:bg-card">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-foreground">
                           {item.feature}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground text-center">
                           {renderFeatureValue(item.basic)}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground text-center">
                           {renderFeatureValue(item.medium)}
                         </td>
-                        <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 text-center">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm text-muted-foreground text-center">
                           {renderFeatureValue(item.advanced)}
                         </td>
                       </tr>
@@ -186,22 +186,22 @@ export default function PlansPage() {
         </section>
 
         {/* Additional Services */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Serviços Adicionais
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Serviços especializados disponíveis para complementar seu plano
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {additionalServices.map((service, index) => (
-                <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{service.title}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+                <div key={index} className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground mb-4">{service.description}</p>
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold text-primary">{service.price}</span>
                     <Button variant="outline" size="sm">
@@ -215,49 +215,49 @@ export default function PlansPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-card">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Perguntas Frequentes sobre Planos
               </h2>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <div className="bg-background rounded-xl p-6 shadow-sm border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   Posso mudar de plano a qualquer momento?
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Sim, você pode fazer upgrade ou downgrade do seu plano a qualquer momento. 
                   As mudanças são aplicadas no próximo ciclo de faturamento.
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <div className="bg-background rounded-xl p-6 shadow-sm border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   Os preços incluem impostos?
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Os preços apresentados não incluem IVA, que será aplicado conforme a legislação vigente.
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <div className="bg-background rounded-xl p-6 shadow-sm border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   Há período de fidelidade?
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Recomendamos contratos anuais para melhor continuidade dos serviços, mas oferecemos 
                   flexibilidade conforme a necessidade do cliente.
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <div className="bg-background rounded-xl p-6 shadow-sm border border-border">
+                <h3 className="text-lg font-semibold text-foreground mb-3">
                   Como funciona o suporte?
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-muted-foreground">
                   Oferecemos suporte via email, telefone e presencial conforme o plano contratado. 
                   O Plano Avançado inclui suporte prioritário.
                 </p>

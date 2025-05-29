@@ -119,11 +119,11 @@ export default function ServicesPage() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-blue-700">
+        <section className="py-20 bg-gradient-to-br from-background via-primary to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center text-white">
-              <h1 className="text-5xl font-bold mb-6">Nossos Serviços</h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <div className="text-center text-foreground">
+              <h1 className="text-5xl font-bold mb-6 text-foreground">Nossos Serviços</h1>
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-muted-foreground">
                 Soluções completas em contabilidade, fiscal e gestão empresarial para o seu negócio
               </p>
             </div>
@@ -133,27 +133,27 @@ export default function ServicesPage() {
         <Services />
 
         {/* Detailed Services */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Serviços Detalhados
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Conheça em detalhes cada um dos nossos serviços especializados
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {detailedServices.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300">
+                <div key={index} className="bg-background rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-border">
                   <div className="flex items-start mb-6">
                     <div className={`w-16 h-16 rounded-full flex items-center justify-center mr-6 ${getColorClasses(service.color)}`}>
                       <service.icon className="w-8 h-8" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                      <p className="text-gray-600">{service.description}</p>
+                      <h3 className="text-2xl font-bold text-foreground mb-2">{service.title}</h3>
+                      <p className="text-muted-foreground">{service.description}</p>
                     </div>
                   </div>
                   
@@ -161,7 +161,7 @@ export default function ServicesPage() {
                     {service.details.map((detail, detailIndex) => (
                       <div key={detailIndex} className="flex items-center">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                        <span className="text-gray-700">{detail}</span>
+                        <span className="text-foreground">{detail}</span>
                       </div>
                     ))}
                   </div>
@@ -172,48 +172,48 @@ export default function ServicesPage() {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Como Trabalhamos
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Nosso processo simplificado para atender sua empresa
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Análise Inicial</h3>
-                <p className="text-gray-600">Avaliamos suas necessidades e situação atual</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Análise Inicial</h3>
+                <p className="text-muted-foreground">Avaliamos suas necessidades e situação atual</p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-gold">2</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Proposta Personalizada</h3>
-                <p className="text-gray-600">Elaboramos uma solução sob medida para você</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Proposta Personalizada</h3>
+                <p className="text-muted-foreground">Elaboramos uma solução sob medida para você</p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-green-600">3</span>
+                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-green-500">3</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Implementação</h3>
-                <p className="text-gray-600">Colocamos os serviços em funcionamento</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Implementação</h3>
+                <p className="text-muted-foreground">Colocamos os serviços em funcionamento</p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-blue-600">4</span>
+                <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-blue-500">4</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Acompanhamento</h3>
-                <p className="text-gray-600">Monitoramos e otimizamos continuamente</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Acompanhamento</h3>
+                <p className="text-muted-foreground">Monitoramos e otimizamos continuamente</p>
               </div>
             </div>
           </div>
