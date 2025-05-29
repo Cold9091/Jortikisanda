@@ -140,21 +140,21 @@ export default function FAQPage() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-blue-700">
+        <section className="py-20 bg-gradient-to-br from-background via-primary to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center text-white">
-              <h1 className="text-5xl font-bold mb-6">Perguntas Frequentes</h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <div className="text-center text-foreground">
+              <h1 className="text-5xl font-bold mb-6 text-foreground">Perguntas Frequentes</h1>
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-muted-foreground">
                 Encontre respostas para as principais dúvidas sobre nossos serviços contábeis e fiscais
               </p>
               
               {/* Search Bar */}
               <div className="max-w-2xl mx-auto relative">
-                <Search className="w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <Search className="w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
                 <input
                   type="text"
                   placeholder="Pesquisar pergunta..."
-                  className="w-full pl-12 pr-4 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full pl-12 pr-4 py-4 rounded-full bg-card text-foreground text-lg focus:outline-none focus:ring-2 focus:ring-primary border border-border"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -166,13 +166,13 @@ export default function FAQPage() {
         <FAQ />
 
         {/* Detailed FAQ by Categories */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Perguntas por Categoria
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Navegue pelas categorias para encontrar respostas específicas
               </p>
             </div>
@@ -180,20 +180,20 @@ export default function FAQPage() {
             {filteredCategories.length > 0 ? (
               <div className="space-y-12">
                 {filteredCategories.map((category, categoryIndex) => (
-                  <div key={categoryIndex} className="bg-white rounded-xl shadow-lg p-8">
+                  <div key={categoryIndex} className="bg-background rounded-xl shadow-lg p-8 border border-border">
                     <div className="flex items-center mb-8">
                       <span className="text-3xl mr-4">{category.icon}</span>
-                      <h3 className="text-2xl font-bold text-gray-900">{category.title}</h3>
+                      <h3 className="text-2xl font-bold text-foreground">{category.title}</h3>
                     </div>
                     
                     <div className="space-y-6">
                       {category.questions.map((faq, faqIndex) => (
                         <div key={faqIndex} className="border-l-4 border-primary pl-6">
-                          <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-start">
+                          <h4 className="text-lg font-semibold text-foreground mb-3 flex items-start">
                             <HelpCircle className="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" />
                             {faq.question}
                           </h4>
-                          <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                          <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
                         </div>
                       ))}
                     </div>
@@ -203,11 +203,11 @@ export default function FAQPage() {
             ) : (
               searchTerm && (
                 <div className="text-center py-12">
-                  <HelpCircle className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  <HelpCircle className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
                     Nenhuma pergunta encontrada
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-muted-foreground">
                     Não encontramos perguntas relacionadas ao termo "{searchTerm}". 
                     Tente usar palavras-chave diferentes ou entre em contato conosco.
                   </p>
@@ -218,25 +218,25 @@ export default function FAQPage() {
         </section>
 
         {/* Quick Contact */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Não Encontrou sua Resposta?
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Entre em contato conosco através dos canais abaixo
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {contactMethods.map((method, index) => (
-                <div key={index} className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300">
+                <div key={index} className="text-center p-6 bg-card rounded-xl hover:shadow-lg transition-all duration-300 border border-border">
                   <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${method.color.replace('text-', 'bg-').replace('600', '100').replace('500', '100')}`}>
                     <method.icon className={`w-8 h-8 ${method.color}`} />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{method.title}</h3>
-                  <p className="text-gray-600 mb-4">{method.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{method.title}</h3>
+                  <p className="text-muted-foreground mb-4">{method.description}</p>
                   <p className={`font-medium ${method.color}`}>{method.action}</p>
                 </div>
               ))}
@@ -253,25 +253,25 @@ export default function FAQPage() {
         </section>
 
         {/* Response Time Info */}
-        <section className="py-20 bg-blue-50">
+        <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div className="bg-background rounded-xl shadow-lg p-8 text-center border border-border">
               <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              <h2 className="text-2xl font-bold text-foreground mb-4">
                 Tempos de Resposta
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                  <div className="text-2xl font-bold text-green-600 mb-1">2-4h</div>
-                  <div className="text-gray-600">Consultas por WhatsApp</div>
+                  <div className="text-2xl font-bold text-green-500 mb-1">2-4h</div>
+                  <div className="text-muted-foreground">Consultas por WhatsApp</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-blue-600 mb-1">24h</div>
-                  <div className="text-gray-600">Consultas por Email</div>
+                  <div className="text-2xl font-bold text-blue-500 mb-1">24h</div>
+                  <div className="text-muted-foreground">Consultas por Email</div>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-gold mb-1">Imediato</div>
-                  <div className="text-gray-600">Atendimento Telefónico</div>
+                  <div className="text-muted-foreground">Atendimento Telefónico</div>
                 </div>
               </div>
             </div>
