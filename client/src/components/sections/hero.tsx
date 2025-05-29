@@ -142,35 +142,35 @@ export default function Hero() {
       </section>
       
       {/* Stats Section */}
-      <section id="stats" className="py-20 bg-white">
+      <section id="stats" className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-3xl">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/30 p-8 rounded-3xl">
                 <div className="text-4xl font-bold text-primary mb-2">500+</div>
-                <div className="text-gray-600 font-medium">Empresas Atendidas</div>
-                <div className="text-sm text-gray-500 mt-1">Em todo território nacional</div>
+                <div className="text-gray-600 dark:text-gray-300 font-medium">Empresas Atendidas</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Em todo território nacional</div>
               </div>
             </div>
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-gold/10 to-yellow-100 p-8 rounded-3xl">
+              <div className="bg-gradient-to-br from-gold/10 to-yellow-100 dark:from-yellow-900/20 dark:to-yellow-800/30 p-8 rounded-3xl">
                 <div className="text-4xl font-bold text-gold mb-2">15+</div>
-                <div className="text-gray-600 font-medium">Anos de Experiência</div>
-                <div className="text-sm text-gray-500 mt-1">No mercado angolano</div>
+                <div className="text-gray-600 dark:text-gray-300 font-medium">Anos de Experiência</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">No mercado angolano</div>
               </div>
             </div>
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-3xl">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/30 p-8 rounded-3xl">
                 <div className="text-4xl font-bold text-green-600 mb-2">99%</div>
-                <div className="text-gray-600 font-medium">Satisfação dos Clientes</div>
-                <div className="text-sm text-gray-500 mt-1">Avaliação média</div>
+                <div className="text-gray-600 dark:text-gray-300 font-medium">Satisfação dos Clientes</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Avaliação média</div>
               </div>
             </div>
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-3xl">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/30 p-8 rounded-3xl">
                 <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
-                <div className="text-gray-600 font-medium">Profissionais</div>
-                <div className="text-sm text-gray-500 mt-1">Certificados e experientes</div>
+                <div className="text-gray-600 dark:text-gray-300 font-medium">Profissionais</div>
+                <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Certificados e experientes</div>
               </div>
             </div>
           </div>
