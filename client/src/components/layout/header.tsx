@@ -59,6 +59,12 @@ export default function Header() {
                 Serviços
               </button>
               <button
+                onClick={() => scrollToSection("planos")}
+                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+              >
+                Planos
+              </button>
+              <button
                 onClick={() => scrollToSection("depoimentos")}
                 className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
@@ -113,6 +119,12 @@ export default function Header() {
               className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
             >
               Serviços
+            </button>
+            <button
+              onClick={() => scrollToSection("planos")}
+              className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+            >
+              Planos
             </button>
             <button
               onClick={() => scrollToSection("depoimentos")}
