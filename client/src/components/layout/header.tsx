@@ -65,6 +65,12 @@ export default function Header() {
                 Clientes
               </button>
               <button
+                onClick={() => scrollToSection("noticias")}
+                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+              >
+                Notícias
+              </button>
+              <button
                 onClick={() => scrollToSection("faq")}
                 className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
@@ -119,6 +125,12 @@ export default function Header() {
               className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
             >
               Clientes
+            </button>
+            <button
+              onClick={() => scrollToSection("noticias")}
+              className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+            >
+              Notícias
             </button>
             <button
               onClick={() => scrollToSection("faq")}
