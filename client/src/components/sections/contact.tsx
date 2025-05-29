@@ -55,18 +55,47 @@ export default function Contact() {
       });
       return;
     }
-    contactMutation.mutate(formData);
+    
+    // Criar mensagem para WhatsApp
+    const whatsappMessage = `Olá! Sou ${formData.name}.
+    
+Email: ${formData.email}
+${formData.phone ? `Telefone: ${formData.phone}` : ''}
+${formData.service ? `Serviço de interesse: ${formData.service}` : ''}
+
+Mensagem: ${formData.message}`;
+    
+    // Enviar via WhatsApp
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    window.open(
+      `https://wa.me/244939103175?text=${encodedMessage}`,
+      "_blank"
+    );
+    
+    // Limpar formulário
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: "",
+    });
+    
+    toast({
+      title: "Redirecionando para WhatsApp",
+      description: "Sua mensagem será enviada via WhatsApp.",
+    });
   };
 
   const handleWhatsApp = () => {
     window.open(
-      "https://wa.me/244xxxxxxxxx?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.",
+      "https://wa.me/244939103175?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.",
       "_blank"
     );
   };
 
   const handleEmail = () => {
-    window.location.href = "mailto:info@jortikisanda.ao";
+    window.location.href = "mailto:Jortikisanda@gmail.com";
   };
 
   return (
@@ -210,8 +239,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-primary">Telefones</h4>
                       <p className="text-gray-600">
-                        +244 xxx xxx xxx<br />
-                        +244 yyy yyy yyy
+                        +244 939 103 175<br />
+                        +244 932 036 524
                       </p>
                     </div>
                   </div>
@@ -222,8 +251,8 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-primary">Email</h4>
                       <p className="text-gray-600">
-                        info@jortikisanda.ao<br />
-                        contato@jortikisanda.ao
+                        Jortikisanda@gmail.com<br />
+                        Jsescritoriocontabilidade@gmail.com
                       </p>
                     </div>
                   </div>

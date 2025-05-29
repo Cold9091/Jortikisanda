@@ -3,11 +3,11 @@ import { File, MessageCircle, CalendarCheck, ChevronDown, TrendingUp, Users, Shi
 
 export default function Hero() {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/244xxxxxxxxx?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.", "_blank");
+    window.open("https://wa.me/244939103175?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.", "_blank");
   };
 
   const handleEmail = () => {
-    window.location.href = "mailto:info@jortikisanda.ao?subject=Solicitação de Orçamento";
+    window.location.href = "mailto:Jortikisanda@gmail.com?subject=Solicitação de Orçamento";
   };
 
   const scrollToContact = () => {

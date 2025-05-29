@@ -231,7 +231,7 @@ export default function Services() {
                   Solicitar Consulta Gratuita
                 </button>
                 <button 
-                  onClick={() => window.open("https://wa.me/244xxxxxxxxx?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.", "_blank")}
+                  onClick={() => window.open("https://wa.me/244939103175?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.", "_blank")}
                   className="border-2 border-white text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105"
                 >
                   Falar no WhatsApp

@@ -6,7 +6,6 @@ import About from "@/components/sections/about";
 import WhyChooseUs from "@/components/sections/why-choose-us";
 import Clients from "@/components/sections/clients";
 import Certifications from "@/components/sections/certifications";
-import News from "@/components/sections/news";
 import FAQ from "@/components/sections/faq";
 import Contact from "@/components/sections/contact";
 
@@ -21,7 +20,6 @@ export default function Home() {
         <WhyChooseUs />
         <Clients />
         <Certifications />
-        <News />
         <FAQ />
         <Contact />
       </main>
