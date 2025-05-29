@@ -100,20 +100,24 @@ export default function ContactPage() {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-blue-700">
+        <section className="py-20 bg-gradient-to-br from-background via-primary to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center text-white">
-              <h1 className="text-5xl font-bold mb-6">Entre em Contato</h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto">
+            <div className="text-center text-foreground">
+              <h1 className="text-5xl font-bold mb-6 text-foreground">Entre em Contato</h1>
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-muted-foreground">
                 Estamos prontos para ajudar sua empresa a crescer. Entre em contato conosco 
                 e descubra como podemos transformar sua gestão contábil e fiscal.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white px-8 py-3">
+                <Button 
+                  size="lg" 
+                  className="bg-green-500 hover:bg-green-600 text-white px-8 py-3"
+                  onClick={() => window.open("https://wa.me/244939103175?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.", "_blank")}
+                >
                   <MessageCircle className="w-5 h-5 mr-2" />
                   WhatsApp
                 </Button>
-                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-3">
+                <Button size="lg" className="bg-gold hover:bg-gold/80 text-background px-8 py-3">
                   <Calendar className="w-5 h-5 mr-2" />
                   Agendar Reunião
                 </Button>
@@ -123,21 +127,21 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Info */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div key={index} className="text-center p-6 bg-background rounded-xl hover:shadow-lg transition-all duration-300 border border-border">
+                  <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <info.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{info.title}</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{info.title}</h3>
                   <div className="space-y-1 mb-3">
                     {info.items.map((item, itemIndex) => (
-                      <p key={itemIndex} className="text-gray-700 font-medium">{item}</p>
+                      <p key={itemIndex} className="text-foreground font-medium">{item}</p>
                     ))}
                   </div>
-                  <p className="text-gray-600 text-sm">{info.description}</p>
+                  <p className="text-muted-foreground text-sm">{info.description}</p>
                 </div>
               ))}
             </div>
@@ -147,23 +151,23 @@ export default function ContactPage() {
         <Contact />
 
         {/* Why Contact Us */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Por Que Entrar em Contato Conosco?
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Veja os benefícios de trabalhar com a JortikiSanda
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {reasons.map((reason, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300">
+                <div key={index} className="bg-card rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-border">
                   <reason.icon className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">{reason.title}</h3>
-                  <p className="text-gray-600">{reason.description}</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-3">{reason.title}</h3>
+                  <p className="text-muted-foreground">{reason.description}</p>
                 </div>
               ))}
             </div>
@@ -171,14 +175,14 @@ export default function ContactPage() {
         </section>
 
         {/* Services Overview */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-card">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                <h2 className="text-4xl font-bold text-foreground mb-6">
                   Nossos Serviços Principais
                 </h2>
-                <p className="text-xl text-gray-600 mb-8">
+                <p className="text-xl text-muted-foreground mb-8">
                   Oferecemos uma gama completa de serviços contábeis, fiscais e de 
                   gestão empresarial para atender todas as necessidades da sua empresa.
                 </p>
@@ -186,7 +190,7 @@ export default function ContactPage() {
                   {services.map((service, index) => (
                     <div key={index} className="flex items-center">
                       <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                      <span className="text-gray-700">{service}</span>
+                      <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
@@ -200,15 +204,15 @@ export default function ContactPage() {
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-primary/10 to-blue-50 rounded-xl p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <div className="bg-gradient-to-br from-primary/20 to-blue-900/20 rounded-xl p-8 border border-border">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
                   Perguntas Frequentes
                 </h3>
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (
                     <div key={index}>
-                      <h4 className="font-semibold text-gray-900 mb-2">{faq.question}</h4>
-                      <p className="text-gray-600">{faq.answer}</p>
+                      <h4 className="font-semibold text-foreground mb-2">{faq.question}</h4>
+                      <p className="text-muted-foreground">{faq.answer}</p>
                     </div>
                   ))}
                 </div>
@@ -225,51 +229,58 @@ export default function ContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
                 Nossa Localização
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-muted-foreground">
                 Estamos localizados em Luanda para melhor atender nossos clientes
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-card rounded-xl shadow-lg p-8 border border-border">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">JortikiSanda</h3>
+                  <h3 className="text-2xl font-bold text-foreground mb-6">JortikiSanda</h3>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <MapPin className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-gray-700">Luanda, Angola</span>
+                      <span className="text-foreground">Luanda, Angola</span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-gray-700">+244 939 103 175</span>
+                      <span className="text-foreground">+244 939 103 175</span>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-gray-700">Jortikisanda@gmail.com</span>
+                      <span className="text-foreground">Jortikisanda@gmail.com</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-gray-700">Segunda a Sexta: 8h - 17h</span>
+                      <span className="text-foreground">Segunda a Sexta: 8h - 17h</span>
                     </div>
                   </div>
-                  <div className="mt-6">
+                  <div className="mt-6 flex gap-4">
                     <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-3">
                       <Calendar className="w-4 h-4 mr-2" />
                       Agendar Visita
                     </Button>
+                    <Button 
+                      className="bg-green-500 hover:bg-green-600 text-white px-6 py-3"
+                      onClick={() => window.open("https://wa.me/244939103175?text=Olá! Gostaria de agendar uma visita presencial.", "_blank")}
+                    >
+                      <MessageCircle className="w-4 h-4 mr-2" />
+                      WhatsApp
+                    </Button>
                   </div>
                 </div>
                 
-                <div className="h-64 bg-gradient-to-r from-primary/20 to-blue-100 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-gray-600">
-                    <MapPin className="w-16 h-16 mx-auto mb-4" />
-                    <p>Mapa da localização</p>
+                <div className="h-64 bg-gradient-to-r from-primary/20 to-blue-900/20 rounded-lg flex items-center justify-center border border-border">
+                  <div className="text-center text-muted-foreground">
+                    <MapPin className="w-16 h-16 mx-auto mb-4 text-primary" />
+                    <p className="text-foreground">Mapa da localização</p>
                     <p className="text-sm">Luanda, Angola</p>
                   </div>
                 </div>
