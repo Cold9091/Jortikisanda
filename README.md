@@ -8,16 +8,15 @@ Website institucional completo para a **JortikiSanda**, empresa angolana especia
 
 ## 🌟 Características Principais
 
-### ✨ Seções do Website
-- **Hero Section** - Apresentação impactante da empresa
+### ✨ Páginas do Website
+- **Página Inicial** - Apresentação da empresa com navegação para todas as seções
+- **Sobre Nós** - História, valores e diferenciais da empresa
 - **Serviços** - Detalhamento completo dos serviços oferecidos
-- **Quem Somos** - História e valores da empresa
-- **Por Que Escolher** - Diferenciais competitivos
-- **Nossos Planos** - Três planos de serviços (Básico, Médio, Avançado)
-- **Calendário Fiscal** - Tabela completa com obrigações fiscais angolanas
-- **Depoimentos** - Feedback de clientes satisfeitos
-- **FAQ** - Perguntas frequentes com respostas detalhadas
-- **Contato** - Formulário integrado com WhatsApp
+- **Planos** - Três planos de serviços (Básico, Médio, Avançado) com comparação detalhada
+- **Blog** - Artigos e insights sobre contabilidade e gestão empresarial em Angola
+- **Depoimentos** - Feedback detalhado de clientes satisfeitos
+- **FAQ** - Perguntas frequentes organizadas por categorias
+- **Contato** - Múltiplas formas de contato e formulário integrado
 
 ### 🎨 Design e UX
 - Design responsivo para desktop, tablet e mobile
@@ -29,11 +28,12 @@ Website institucional completo para a **JortikiSanda**, empresa angolana especia
 
 ### 📱 Funcionalidades
 - **Formulário de Contato** que redireciona para WhatsApp
-- **Navegação suave** entre seções
-- **Calendário Fiscal Interativo** com 10+ obrigações
-- **Sistema de Planos** com CTAs personalizados
+- **Navegação por páginas** com sistema de roteamento
+- **Blog com Sistema de Busca** e categorização de artigos
+- **Sistema de Planos** com comparação detalhada
 - **Design Responsivo** completo
 - **Otimização SEO** básica implementada
+- **Páginas de Leitura** dedicadas para cada artigo do blog
 
 ## 🛠️ Tecnologias Utilizadas
 

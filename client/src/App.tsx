@@ -7,7 +7,8 @@ import Home from "@/pages/home";
 import About from "@/pages/about";
 import Services from "@/pages/services";
 import Plans from "@/pages/plans";
-import FiscalCalendar from "@/pages/fiscal-calendar";
+import Blog from "@/pages/blog";
+import BlogPost from "@/pages/blog-post";
 import Testimonials from "@/pages/testimonials";
 import FAQ from "@/pages/faq";
 import Contact from "@/pages/contact";
@@ -20,7 +21,8 @@ function Router() {
       <Route path="/sobre" component={About} />
       <Route path="/servicos" component={Services} />
       <Route path="/planos" component={Plans} />
-      <Route path="/calendario-fiscal" component={FiscalCalendar} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/depoimentos" component={Testimonials} />
       <Route path="/faq" component={FAQ} />
       <Route path="/contato" component={Contact} />

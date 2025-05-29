@@ -7,7 +7,7 @@ import {
   Calculator, 
   FileText, 
   Users, 
-  Calendar,
+  BookOpen,
   MessageCircle,
   HelpCircle,
   ArrowRight 
@@ -63,17 +63,17 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href="/calendario-fiscal">
+              <Link href="/blog">
                 <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                    <Calendar className="w-8 h-8 text-green-600" />
+                    <BookOpen className="w-8 h-8 text-green-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Calendário Fiscal</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Blog</h3>
                   <p className="text-gray-600 mb-4">
-                    Obrigações fiscais angolanas organizadas por mês e prioridade
+                    Artigos e insights sobre contabilidade e gestão empresarial em Angola
                   </p>
                   <div className="flex items-center text-primary font-medium">
-                    Ver calendário <ArrowRight className="w-4 h-4 ml-2" />
+                    Ver artigos <ArrowRight className="w-4 h-4 ml-2" />
                   </div>
                 </div>
               </Link>

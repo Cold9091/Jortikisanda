@@ -69,12 +69,12 @@ export default function Header() {
                 Planos
               </Link>
               <Link
-                href="/calendario-fiscal"
+                href="/blog"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/calendario-fiscal") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/blog") ? "text-primary" : "text-gray-700 hover:text-gold"
                 }`}
               >
-                Calendário Fiscal
+                Blog
               </Link>
               <Link
                 href="/depoimentos"
@@ -155,13 +155,13 @@ export default function Header() {
               Planos
             </Link>
             <Link
-              href="/calendario-fiscal"
+              href="/blog"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/calendario-fiscal") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/blog") ? "text-primary" : "text-gray-700 hover:text-gold"
               }`}
             >
-              Calendário Fiscal
+              Blog
             </Link>
             <Link
               href="/depoimentos"
