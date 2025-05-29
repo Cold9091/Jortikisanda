@@ -2,7 +2,7 @@ import { Target, Eye, Heart, Star, Users, Award } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="quem-somos" className="py-24 bg-gradient-to-br from-blue-50 to-gray-50 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
+    <section id="quem-somos" className="py-24 bg-gradient-to-br from-blue-50 to-gray-50 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-primary/10 to-transparent rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-tr from-gold/10 to-transparent rounded-full filter blur-3xl"></div>
@@ -19,26 +19,26 @@ export default function About() {
             </div>
             
             {/* Floating achievement cards */}
-            <div className="absolute -top-6 -right-6 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
+            <div className="absolute -top-6 -right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
               <div className="flex items-center">
-                <div className="bg-green-100 dark:bg-green-900/50 p-2 rounded-lg mr-3">
+                <div className="bg-green-100 p-2 rounded-lg mr-3">
                   <Award className="text-green-600" size={20} />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-gray-800 dark:text-gray-200">Certificados</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">ISO 9001:2015</div>
+                  <div className="text-sm font-semibold text-gray-800">Certificados</div>
+                  <div className="text-xs text-gray-600">ISO 9001:2015</div>
                 </div>
               </div>
             </div>
             
-            <div className="absolute -bottom-6 -left-6 bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
+            <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
               <div className="flex items-center">
-                <div className="bg-blue-100 dark:bg-blue-900/50 p-2 rounded-lg mr-3">
+                <div className="bg-blue-100 p-2 rounded-lg mr-3">
                   <Star className="text-blue-600" size={20} />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-gray-800 dark:text-gray-200">Excelência</div>
-                  <div className="text-xs text-gray-600 dark:text-gray-400">15+ anos de experiência</div>
+                  <div className="text-sm font-semibold text-gray-800">Excelência</div>
+                  <div className="text-xs text-gray-600">15+ anos de experiência</div>
                 </div>
               </div>
             </div>
