@@ -91,11 +91,11 @@ export default function Contact() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card>
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold font-montserrat text-primary mb-6">
+          <Card className="glass-effect border-0 shadow-2xl animate-scale-in">
+            <CardContent className="p-10">
+              <h3 className="text-3xl font-semibold font-montserrat text-primary mb-8">
                 Envie uma Mensagem
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -174,7 +174,7 @@ export default function Contact() {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-gold text-primary hover:bg-yellow-400"
+                  className="w-full bg-gold text-primary hover:bg-yellow-400 py-4 text-lg font-semibold rounded-xl hover:scale-105 transition-all duration-300"
                   disabled={contactMutation.isPending}
                 >
                   {contactMutation.isPending ? "Enviando..." : "Enviar Mensagem"}
@@ -184,10 +184,10 @@ export default function Contact() {
           </Card>
 
           {/* Contact Info */}
-          <div className="space-y-8">
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold font-montserrat text-primary mb-6">
+          <div className="space-y-8 animate-slide-up" style={{animationDelay: '0.2s'}}>
+            <Card className="glass-effect border-0 shadow-2xl">
+              <CardContent className="p-10">
+                <h3 className="text-3xl font-semibold font-montserrat text-primary mb-8">
                   Informações de Contato
                 </h3>
                 <div className="space-y-4">
@@ -244,22 +244,22 @@ export default function Contact() {
             </Card>
 
             {/* Quick Actions */}
-            <Card>
+            <Card className="glass-effect border-0 shadow-2xl">
               <CardContent className="p-8">
-                <h3 className="text-xl font-semibold font-montserrat text-primary mb-4">
+                <h3 className="text-2xl font-semibold font-montserrat text-primary mb-6">
                   Contato Rápido
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <Button
                     onClick={handleWhatsApp}
-                    className="w-full bg-green-500 text-white hover:bg-green-600 justify-start"
+                    className="w-full bg-green-500 text-white hover:bg-green-600 justify-start py-4 rounded-xl hover:scale-105 transition-all duration-300"
                   >
                     <MessageCircle className="mr-3" size={20} />
                     Conversar no WhatsApp
                   </Button>
                   <Button
                     onClick={handleEmail}
-                    className="w-full bg-primary text-white hover:bg-blue-800 justify-start"
+                    className="w-full bg-primary text-white hover:bg-blue-800 justify-start py-4 rounded-xl hover:scale-105 transition-all duration-300"
                   >
                     <Mail className="mr-3" size={20} />
                     Enviar Email
@@ -269,7 +269,7 @@ export default function Contact() {
                       const element = document.getElementById("contato");
                       if (element) element.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="w-full bg-gold text-primary hover:bg-yellow-400 justify-start"
+                    className="w-full bg-gold text-primary hover:bg-yellow-400 justify-start py-4 rounded-xl hover:scale-105 transition-all duration-300"
                   >
                     <Calendar className="mr-3" size={20} />
                     Agendar Reunião
@@ -279,16 +279,18 @@ export default function Contact() {
             </Card>
 
             {/* Map placeholder */}
-            <Card>
+            <Card className="glass-effect border-0 shadow-2xl">
               <CardContent className="p-8">
-                <h3 className="text-xl font-semibold font-montserrat text-primary mb-4">
+                <h3 className="text-2xl font-semibold font-montserrat text-primary mb-6">
                   Localização
                 </h3>
-                <div className="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
+                <div className="bg-gradient-to-br from-gray-100 to-blue-50 h-48 rounded-2xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
                   <div className="text-center text-gray-500">
-                    <MapPin size={48} className="mx-auto mb-2" />
-                    <p>Mapa de Localização</p>
-                    <p className="text-sm">Integração com Google Maps</p>
+                    <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                      <MapPin size={48} className="mx-auto mb-2 text-primary" />
+                      <p className="font-semibold text-primary">Luanda, Angola</p>
+                      <p className="text-sm">Rua Principal, Bairro Comercial</p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
