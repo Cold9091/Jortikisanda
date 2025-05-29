@@ -43,11 +43,11 @@ export default function Hero() {
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-montserrat leading-tight">
                 Organizamos sua{" "}
-                <span className="gradient-text bg-gradient-to-r from-gold to-yellow-300 bg-clip-text text-transparent">
+                <span className="gradient-text">
                   contabilidade
                 </span>
                 , impulsionamos seu{" "}
-                <span className="gradient-text bg-gradient-to-r from-gold to-yellow-300 bg-clip-text text-transparent">
+                <span className="gradient-text">
                   crescimento
                 </span>
               </h1>
@@ -59,7 +59,7 @@ export default function Hero() {
               <div className="flex flex-col sm:flex-row gap-6 pt-4">
                 <Button
                   onClick={handleEmail}
-                  className="group bg-gold text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="group bg-orange-accent text-white px-8 py-4 rounded-2xl font-semibold hover:bg-orange-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <File className="mr-3 group-hover:rotate-12 transition-transform" size={20} />
                   Solicitar Orçamento
