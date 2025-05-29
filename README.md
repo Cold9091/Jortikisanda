@@ -24,7 +24,7 @@ Website institucional completo para a **JortikiSanda**, empresa angolana especia
 - Paleta de cores profissional (azul, dourado, branco)
 - Tipografia moderna (Montserrat)
 - Efeitos glassmorphism e gradientes
-- Indicadores visuais de prioridade no calendário fiscal
+- Sistema de navegação intuitivo entre páginas
 
 ### 📱 Funcionalidades
 - **Formulário de Contato** que redireciona para WhatsApp
