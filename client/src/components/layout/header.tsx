@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import { useTheme } from "@/hooks/use-theme";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +24,7 @@ export default function Header() {
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'glass-effect shadow-xl py-2' 
-        : 'bg-white/90 backdrop-blur-sm shadow-lg py-3'
+        : 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm shadow-lg py-3'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -39,7 +41,7 @@ export default function Header() {
               <Link
                 href="/"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 Início
@@ -47,7 +49,7 @@ export default function Header() {
               <Link
                 href="/sobre"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/sobre") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/sobre") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 Sobre Nós
@@ -55,7 +57,7 @@ export default function Header() {
               <Link
                 href="/servicos"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/servicos") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/servicos") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 Serviços
@@ -63,7 +65,7 @@ export default function Header() {
               <Link
                 href="/planos"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/planos") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/planos") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 Planos
@@ -71,7 +73,7 @@ export default function Header() {
               <Link
                 href="/blog"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/blog") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/blog") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 Blog
@@ -79,7 +81,7 @@ export default function Header() {
               <Link
                 href="/depoimentos"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/depoimentos") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/depoimentos") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 Depoimentos
@@ -87,7 +89,7 @@ export default function Header() {
               <Link
                 href="/faq"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/faq") ? "text-primary" : "text-gray-700 hover:text-gold"
+                  isActive("/faq") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
                 }`}
               >
                 FAQ
