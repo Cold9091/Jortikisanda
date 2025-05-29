@@ -59,16 +59,10 @@ export default function Header() {
                 Serviços
               </button>
               <button
-                onClick={() => scrollToSection("clientes")}
+                onClick={() => scrollToSection("depoimentos")}
                 className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
-                Clientes
-              </button>
-              <button
-                onClick={() => scrollToSection("noticias")}
-                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
-              >
-                Notícias
+                Depoimentos
               </button>
               <button
                 onClick={() => scrollToSection("faq")}
@@ -121,16 +115,10 @@ export default function Header() {
               Serviços
             </button>
             <button
-              onClick={() => scrollToSection("clientes")}
+              onClick={() => scrollToSection("depoimentos")}
               className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
             >
-              Clientes
-            </button>
-            <button
-              onClick={() => scrollToSection("noticias")}
-              className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
-            >
-              Notícias
+              Depoimentos
             </button>
             <button
               onClick={() => scrollToSection("faq")}

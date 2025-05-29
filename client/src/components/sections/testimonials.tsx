@@ -1,0 +1,128 @@
+import { Star, Users } from "lucide-react";
+
+export default function Testimonials() {
+  const testimonials = [
+    {
+      id: 1,
+      name: "Maria José",
+      position: "CEO",
+      company: "TechAngola Lda",
+      rating: 5,
+      content: "A JortikiSanda transformou nossa gestão contábil. Profissionalismo e eficiência excepcionais.",
+      initials: "MJ"
+    },
+    {
+      id: 2,
+      name: "António Carlos",
+      position: "Diretor",
+      company: "ComercialPlus",
+      rating: 5,
+      content: "Excelente atendimento e soluções personalizadas. Recomendo a todos os empresários.",
+      initials: "AC"
+    },
+    {
+      id: 3,
+      name: "Ana Fernandes",
+      position: "CFO",
+      company: "InvestGroup Angola",
+      rating: 5,
+      content: "Profissionais competentes e sempre disponíveis. Nossa empresa cresceu com segurança jurídica.",
+      initials: "AF"
+    }
+  ];
+
+  return (
+    <section id="depoimentos" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-20 left-20 w-72 h-72 bg-gradient-to-tr from-gold/5 to-transparent rounded-full filter blur-3xl"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-20 animate-slide-up">
+          <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary font-medium mb-6">
+            <Users className="mr-2" size={16} />
+            Depoimentos
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-primary mb-6 section-divider pt-6">
+            O que Nossos Clientes Dizem
+          </h2>
+          <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+            Mais de 500 empresas confiam na JortikiSanda para suas necessidades contábeis e fiscais.
+          </p>
+        </div>
+
+        {/* Testimonials Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div 
+              key={testimonial.id} 
+              className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover-lift animate-fade-in" 
+              style={{animationDelay: `${index * 0.1}s`}}
+            >
+              <div className="flex items-center mb-4">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="text-gold fill-current" size={20} />
+                ))}
+              </div>
+              <p className="text-gray-600 mb-6 italic leading-relaxed">
+                "{testimonial.content}"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-primary font-semibold">{testimonial.initials}</span>
+                </div>
+                <div>
+                  <div className="font-semibold text-primary">{testimonial.name}</div>
+                  <div className="text-sm text-gray-500">{testimonial.position}, {testimonial.company}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <div className="text-center bg-gradient-to-br from-primary/5 to-blue-50 rounded-3xl p-8">
+            <div className="text-4xl font-bold text-primary mb-2">500+</div>
+            <div className="text-lg font-semibold text-gray-700 mb-1">Empresas Ativas</div>
+            <div className="text-sm text-gray-600">Em todo território nacional</div>
+          </div>
+          
+          <div className="text-center bg-gradient-to-br from-gold/10 to-yellow-50 rounded-3xl p-8">
+            <div className="text-4xl font-bold text-gold mb-2">15+</div>
+            <div className="text-lg font-semibold text-gray-700 mb-1">Anos de Experiência</div>
+            <div className="text-sm text-gray-600">Servindo Angola</div>
+          </div>
+          
+          <div className="text-center bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8">
+            <div className="text-4xl font-bold text-green-600 mb-2">99%</div>
+            <div className="text-lg font-semibold text-gray-700 mb-1">Satisfação dos Clientes</div>
+            <div className="text-sm text-gray-600">Taxa de retenção</div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-primary to-blue-700 rounded-3xl p-12 text-white">
+            <h3 className="text-3xl font-bold font-montserrat mb-4">
+              Faça Parte dos Nossos Clientes Satisfeitos
+            </h3>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Junte-se a centenas de empresas que escolheram a excelência em serviços contábeis.
+            </p>
+            <button 
+              onClick={() => {
+                const element = document.getElementById("contato");
+                if (element) element.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="bg-gold text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105"
+            >
+              Começar Agora
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
