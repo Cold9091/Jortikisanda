@@ -84,15 +84,15 @@ export default function Hero() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-8 pt-8">
                 <div className="text-center animate-scale-in" style={{animationDelay: '0.2s'}}>
-                  <div className="text-3xl font-bold text-gold">500+</div>
+                  <div className="text-3xl font-bold text-orange-accent">500+</div>
                   <div className="text-sm text-blue-200">Clientes Ativos</div>
                 </div>
                 <div className="text-center animate-scale-in" style={{animationDelay: '0.4s'}}>
-                  <div className="text-3xl font-bold text-gold">15+</div>
+                  <div className="text-3xl font-bold text-orange-accent">15+</div>
                   <div className="text-sm text-blue-200">Anos de Experiência</div>
                 </div>
                 <div className="text-center animate-scale-in" style={{animationDelay: '0.6s'}}>
-                  <div className="text-3xl font-bold text-gold">99%</div>
+                  <div className="text-3xl font-bold text-orange-accent">99%</div>
                   <div className="text-sm text-blue-200">Satisfação</div>
                 </div>
               </div>

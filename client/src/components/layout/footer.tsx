@@ -23,21 +23,21 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gold hover:text-yellow-400 text-xl transition-colors"
+                className="text-orange-accent hover:text-orange-400 text-xl transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={24} />
               </a>
               <a
                 href="#"
-                className="text-gold hover:text-yellow-400 text-xl transition-colors"
+                className="text-orange-accent hover:text-orange-400 text-xl transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
               </a>
               <a
                 href="#"
-                className="text-gold hover:text-yellow-400 text-xl transition-colors"
+                className="text-orange-accent hover:text-orange-400 text-xl transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={24} />
@@ -51,7 +51,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="hover:text-gold transition-colors text-left"
+                  className="hover:text-orange-accent transition-colors text-left"
                 >
                   Contabilidade
                 </button>
@@ -59,7 +59,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="hover:text-gold transition-colors text-left"
+                  className="hover:text-orange-accent transition-colors text-left"
                 >
                   Auditoria
                 </button>
@@ -67,7 +67,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="hover:text-gold transition-colors text-left"
+                  className="hover:text-orange-accent transition-colors text-left"
                 >
                   Gestão de RH
                 </button>
@@ -75,7 +75,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="hover:text-gold transition-colors text-left"
+                  className="hover:text-orange-accent transition-colors text-left"
                 >
                   Fiscalidade
                 </button>
@@ -83,7 +83,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="hover:text-gold transition-colors text-left"
+                  className="hover:text-orange-accent transition-colors text-left"
                 >
                   Formação
                 </button>
