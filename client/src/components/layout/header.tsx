@@ -100,15 +100,33 @@ export default function Header() {
               >
                 Contato
               </Link>
+              
+              {/* Theme Toggle Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleTheme}
+                className="ml-2 text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
+              >
+                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+              </Button>
             </div>
           </div>
           
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              className="text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
+            >
+              {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </Button>
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-gold"
+              className="text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -119,12 +137,12 @@ export default function Header() {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
             <Link
               href="/"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Início
@@ -133,7 +151,7 @@ export default function Header() {
               href="/sobre"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/sobre") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/sobre") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Sobre Nós
@@ -142,7 +160,7 @@ export default function Header() {
               href="/servicos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/servicos") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/servicos") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Serviços
@@ -151,7 +169,7 @@ export default function Header() {
               href="/planos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/planos") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/planos") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Planos
@@ -160,7 +178,7 @@ export default function Header() {
               href="/blog"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/blog") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/blog") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Blog
@@ -169,7 +187,7 @@ export default function Header() {
               href="/depoimentos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/depoimentos") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/depoimentos") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Depoimentos
@@ -178,7 +196,7 @@ export default function Header() {
               href="/faq"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/faq") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/faq") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               FAQ
@@ -187,7 +205,7 @@ export default function Header() {
               href="/contato"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/contato") ? "text-primary" : "text-gray-700 hover:text-gold"
+                isActive("/contato") ? "text-primary" : "text-gray-700 dark:text-gray-300 hover:text-gold dark:hover:text-gold"
               }`}
             >
               Contato
