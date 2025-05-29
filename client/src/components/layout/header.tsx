@@ -39,24 +39,36 @@ export default function Header() {
           </div>
           
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-6">
+            <div className="ml-10 flex items-baseline space-x-4">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="relative text-primary hover:text-gold px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+                className="relative text-primary hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
                 Início
               </button>
               <button
                 onClick={() => scrollToSection("quem-somos")}
-                className="relative text-gray-700 hover:text-gold px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
                 Quem Somos
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
-                className="relative text-gray-700 hover:text-gold px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
                 Serviços
+              </button>
+              <button
+                onClick={() => scrollToSection("clientes")}
+                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+              >
+                Clientes
+              </button>
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="relative text-gray-700 hover:text-gold px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
+              >
+                FAQ
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
@@ -101,6 +113,18 @@ export default function Header() {
               className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
             >
               Serviços
+            </button>
+            <button
+              onClick={() => scrollToSection("clientes")}
+              className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+            >
+              Clientes
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-gray-700 hover:text-gold block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+            >
+              FAQ
             </button>
             <button
               onClick={() => scrollToSection("contato")}
