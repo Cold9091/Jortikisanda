@@ -70,14 +70,24 @@ export default function Contact() {
   };
 
   return (
-    <section id="contato" className="py-20 bg-light-gray">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-montserrat text-primary mb-4">
+    <section id="contato" className="py-24 bg-gradient-to-br from-primary via-blue-800 to-blue-900 text-white relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gold rounded-full filter blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-white rounded-full filter blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+      </div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-20 animate-slide-up">
+          <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+            <Phone className="mr-2" size={16} />
+            Fale Conosco
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 section-divider pt-6">
             Entre em Contato
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Estamos prontos para ajudar sua empresa a crescer. Entre em contato conosco!
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            Estamos prontos para ajudar sua empresa a crescer e alcançar novos patamares de sucesso. Entre em contato conosco!
           </p>
         </div>
         

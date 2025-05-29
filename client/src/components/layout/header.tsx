@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -14,40 +23,44 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full top-0 z-50">
+    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'glass-effect shadow-xl py-2' 
+        : 'bg-white/90 backdrop-blur-sm shadow-lg py-3'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold font-montserrat text-primary">
+            <div className="flex-shrink-0 animate-fade-in">
+              <h1 className="text-2xl font-bold font-montserrat gradient-text">
                 JortikiSanda
               </h1>
             </div>
           </div>
           
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-6">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-primary hover:text-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="relative text-primary hover:text-gold px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
                 Início
               </button>
               <button
                 onClick={() => scrollToSection("quem-somos")}
-                className="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="relative text-gray-700 hover:text-gold px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
                 Quem Somos
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
-                className="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="relative text-gray-700 hover:text-gold px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10"
               >
                 Serviços
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
-                className="text-gray-700 hover:text-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="bg-gradient-to-r from-primary to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
                 Contato
               </button>
