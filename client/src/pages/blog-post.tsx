@@ -143,36 +143,36 @@ export default function BlogPost() {
       <Header />
       <main className="pt-20">
         {/* Article Header */}
-        <section className="py-12 bg-gray-50">
+        <section className="py-12 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link href="/blog">
-              <Button variant="ghost" className="mb-6">
+              <Button variant="ghost" className="mb-6 text-white hover:text-gold hover:bg-white/10">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Voltar ao Blog
               </Button>
             </Link>
             
             <div className="flex items-center mb-4">
-              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+              <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
                 {currentPost.category}
               </span>
-              <span className="mx-2 text-gray-400">•</span>
-              <span className="text-gray-600 text-sm flex items-center">
+              <span className="mx-2 text-blue-200">•</span>
+              <span className="text-blue-100 text-sm flex items-center">
                 <Clock className="w-4 h-4 mr-1" />
                 {currentPost.readTime} de leitura
               </span>
             </div>
             
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">{currentPost.title}</h1>
+            <h1 className="text-4xl font-bold text-white mb-6">{currentPost.title}</h1>
             
             <div className="flex items-center justify-between mb-8">
               <div className="flex items-center">
-                <User className="w-5 h-5 text-gray-400 mr-2" />
-                <span className="text-gray-600">{currentPost.author}</span>
-                <Calendar className="w-5 h-5 text-gray-400 ml-6 mr-2" />
-                <span className="text-gray-600">{currentPost.date}</span>
+                <User className="w-5 h-5 text-blue-200 mr-2" />
+                <span className="text-blue-100">{currentPost.author}</span>
+                <Calendar className="w-5 h-5 text-blue-200 ml-6 mr-2" />
+                <span className="text-blue-100">{currentPost.date}</span>
               </div>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" className="text-white border-white/30 hover:bg-white/10">
                 <Share2 className="w-4 h-4 mr-2" />
                 Compartilhar
               </Button>

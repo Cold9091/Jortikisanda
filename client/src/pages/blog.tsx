@@ -203,13 +203,13 @@ export default function Blog() {
         )}
 
         {/* Blog Posts Grid */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Últimos Artigos
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-blue-100">
                 Mantenha-se atualizado com as últimas novidades
               </p>
             </div>
@@ -217,7 +217,7 @@ export default function Blog() {
             {filteredPosts.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPosts.filter(post => !post.featured).map((post, index) => (
-                  <article key={index} className="bg-white border border-gray-200 rounded-xl hover:shadow-lg transition-all duration-300">
+                  <article key={index} className="bg-white/95 backdrop-blur-sm border border-white/20 rounded-xl hover:shadow-lg transition-all duration-300">
                     <div className="h-48 overflow-hidden rounded-t-xl">
                       <img 
                         src={post.image} 
@@ -264,11 +264,11 @@ export default function Blog() {
               </div>
             ) : (
               <div className="text-center py-12">
-                <Search className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <Search className="w-16 h-16 text-blue-200 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-2">
                   Nenhum artigo encontrado
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-blue-100">
                   Não encontramos artigos com os critérios selecionados. Tente ajustar sua pesquisa.
                 </p>
               </div>
