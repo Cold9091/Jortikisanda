@@ -177,7 +177,7 @@ export default function About() {
                   Nossos Valores
                 </h3>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
                 {[
                   "Integridade",
                   "Transparência", 
@@ -186,8 +186,8 @@ export default function About() {
                   "Responsabilidade"
                 ].map((value, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-white/30">
-                      <div className="text-sm font-medium text-primary">{value}</div>
+                    <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-white/30 min-h-[60px] flex items-center justify-center">
+                      <div className="text-sm font-medium text-primary text-center break-words">{value}</div>
                     </div>
                   </div>
                 ))}

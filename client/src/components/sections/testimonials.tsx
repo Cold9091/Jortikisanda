@@ -32,21 +32,21 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="depoimentos" className="py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="depoimentos" className="py-24 bg-gradient-to-br from-primary via-blue-800 to-blue-900 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-72 h-72 bg-gradient-to-tr from-gold/5 to-transparent rounded-full filter blur-3xl"></div>
+      <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-white/5 to-transparent rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-20 left-20 w-72 h-72 bg-gradient-to-tr from-gold/20 to-transparent rounded-full filter blur-3xl"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary font-medium mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium mb-6">
             <Users className="mr-2" size={16} />
             Depoimentos
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-primary mb-6 section-divider pt-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-white mb-6 section-divider pt-6">
             O que Nossos Clientes Dizem
           </h2>
-          <p className="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-blue-100 text-xl max-w-3xl mx-auto leading-relaxed">
             Mais de 500 empresas confiam na JortikiSanda para suas necessidades contábeis e fiscais.
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div 
               key={testimonial.id} 
-              className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover-lift animate-fade-in" 
+              className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover-lift animate-fade-in border border-white/20" 
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <div className="flex items-center mb-4">
