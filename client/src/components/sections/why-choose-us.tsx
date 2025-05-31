@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-tr from-primary/10 to-transparent rounded-full filter blur-3xl"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full font-medium mb-6 text-[#dc6014]">
+          <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full font-medium mb-6 text-primary">
             <Star className="mr-2" size={16} />
             Nossos Diferenciais
           </div>
@@ -22,8 +22,8 @@ export default function WhyChooseUs() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center group hover-lift animate-scale-in">
-            <div className="bg-gradient-to-br from-gold/20 to-yellow-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Award className="text-gold" size={48} />
+            <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Award className="text-primary" size={48} />
             </div>
             <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4 group-hover:text-gold transition-colors">
               Experiência
@@ -46,8 +46,8 @@ export default function WhyChooseUs() {
           </div>
           
           <div className="text-center group hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
-            <div className="bg-gradient-to-br from-green-100 to-green-200 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Clock className="text-green-600" size={48} />
+            <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Clock className="text-primary" size={48} />
             </div>
             <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4 group-hover:text-gold transition-colors">
               Agilidade
@@ -58,8 +58,8 @@ export default function WhyChooseUs() {
           </div>
           
           <div className="text-center group hover-lift animate-scale-in" style={{animationDelay: '0.3s'}}>
-            <div className="bg-gradient-to-br from-purple-100 to-purple-200 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <Handshake className="text-purple-600" size={48} />
+            <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Handshake className="text-primary" size={48} />
             </div>
             <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4 group-hover:text-gold transition-colors">
               Parceria
@@ -112,8 +112,8 @@ export default function WhyChooseUs() {
                 "Excelente atendimento e soluções personalizadas. Recomendo a todos os empresários."
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-gold/20 to-yellow-100 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-gold font-semibold">AC</span>
+                <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-primary font-semibold">AC</span>
                 </div>
                 <div>
                   <div className="font-semibold text-primary">António Carlos</div>
@@ -132,8 +132,8 @@ export default function WhyChooseUs() {
                 "Parceiros de confiança há mais de 5 anos. Sempre prontos a ajudar e orientar."
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-full flex items-center justify-center mr-3">
-                  <span className="text-green-600 font-semibold">LF</span>
+                <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-blue-100 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-primary font-semibold">LF</span>
                 </div>
                 <div>
                   <div className="font-semibold text-primary">Luísa Fernandes</div>

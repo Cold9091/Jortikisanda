@@ -108,7 +108,7 @@ export default function Services() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-slide-up">
-            <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full font-medium mb-6 text-[#dc6014]">
+            <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full font-medium mb-6 text-primary">
               <Calculator className="mr-2" size={16} />
               Soluções Especializadas
             </div>
@@ -123,8 +123,8 @@ export default function Services() {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover-lift bg-white/80 backdrop-blur-sm border-0 shadow-lg animate-scale-in">
               <CardContent className="p-8 text-center">
-                <div className="bg-gradient-to-br from-gold/20 to-yellow-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <Calculator className="text-gold" size={32} />
+                <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Calculator className="text-primary" size={32} />
                 </div>
                 <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4">
                   Contabilidade
@@ -151,8 +151,8 @@ export default function Services() {
             
             <Card className="hover-lift bg-white/80 backdrop-blur-sm border-0 shadow-lg animate-scale-in" style={{animationDelay: '0.2s'}}>
               <CardContent className="p-8 text-center">
-                <div className="bg-gradient-to-br from-green-100 to-green-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                  <TrendingUp className="text-green-600" size={32} />
+                <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <TrendingUp className="text-primary" size={32} />
                 </div>
                 <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4">
                   Análise Financeira
@@ -189,8 +189,10 @@ export default function Services() {
                   <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
                   <div className="relative z-10">
-                    <div className="bg-gradient-to-br from-gold/20 to-yellow-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <IconComponent iconName={service.icon} />
+                    <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <div className="text-primary">
+                        <IconComponent iconName={service.icon} />
+                      </div>
                     </div>
                     <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4 group-hover:text-gold transition-colors">
                       {service.title}
@@ -225,7 +227,7 @@ export default function Services() {
                     const element = document.getElementById("contato");
                     if (element) element.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105 bg-[#dc6014]"
+                  className="bg-primary text-white px-8 py-4 rounded-2xl font-semibold hover:bg-primary/90 transition-all duration-300 hover:scale-105"
                 >
                   Solicitar Consulta Gratuita
                 </button>
