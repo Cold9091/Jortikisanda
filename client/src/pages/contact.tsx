@@ -211,7 +211,7 @@ export default function ContactPage() {
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (
                     <div key={index}>
-                      <h4 className="font-semibold text-gray-800 mb-2">{faq.question}</h4>
+                      <h4 className="font-semibold mb-2 text-[#006bff]">{faq.question}</h4>
                       <p className="text-gray-600">{faq.answer}</p>
                     </div>
                   ))}
