@@ -151,23 +151,23 @@ export default function ContactPage() {
         <Contact />
 
         {/* Why Contact Us */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Por Que Entrar em Contato Conosco?
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-blue-100">
                 Veja os benefícios de trabalhar com a JortikiSanda
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {reasons.map((reason, index) => (
-                <div key={index} className="bg-card rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-border">
+                <div key={index} className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-white/20">
                   <reason.icon className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-foreground mb-3">{reason.title}</h3>
-                  <p className="text-muted-foreground">{reason.description}</p>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-3">{reason.title}</h3>
+                  <p className="text-gray-600">{reason.description}</p>
                 </div>
               ))}
             </div>
@@ -175,28 +175,28 @@ export default function ContactPage() {
         </section>
 
         {/* Services Overview */}
-        <section className="py-20 bg-card">
+        <section className="py-20 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-4xl font-bold text-foreground mb-6">
+                <h2 className="text-4xl font-bold text-white mb-6">
                   Nossos Serviços Principais
                 </h2>
-                <p className="text-xl text-muted-foreground mb-8">
+                <p className="text-xl text-blue-100 mb-8">
                   Oferecemos uma gama completa de serviços contábeis, fiscais e de 
                   gestão empresarial para atender todas as necessidades da sua empresa.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {services.map((service, index) => (
                     <div key={index} className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                      <span className="text-foreground">{service}</span>
+                      <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                      <span className="text-white">{service}</span>
                     </div>
                   ))}
                 </div>
                 <div className="mt-8">
                   <Link href="/servicos">
-                    <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-3">
+                    <Button className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border border-white/30 px-6 py-3">
                       Ver Todos os Serviços
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
@@ -204,15 +204,15 @@ export default function ContactPage() {
                 </div>
               </div>
               
-              <div className="bg-gradient-to-br from-primary/20 to-blue-900/20 rounded-xl p-8 border border-border">
-                <h3 className="text-2xl font-bold text-foreground mb-6">
+              <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">
                   Perguntas Frequentes
                 </h3>
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (
                     <div key={index}>
-                      <h4 className="font-semibold text-foreground mb-2">{faq.question}</h4>
-                      <p className="text-muted-foreground">{faq.answer}</p>
+                      <h4 className="font-semibold text-gray-800 mb-2">{faq.question}</h4>
+                      <p className="text-gray-600">{faq.answer}</p>
                     </div>
                   ))}
                 </div>
@@ -229,37 +229,37 @@ export default function ContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Nossa Localização
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-blue-100">
                 Estamos localizados em Luanda para melhor atender nossos clientes
               </p>
             </div>
 
-            <div className="bg-card rounded-xl shadow-lg p-8 border border-border">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-white/20">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground mb-6">JortikiSanda</h3>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-6">JortikiSanda</h3>
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <MapPin className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-foreground">Luanda, Angola</span>
+                      <span className="text-gray-700">Luanda, Angola</span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-foreground">+244 939 103 175</span>
+                      <span className="text-gray-700">+244 939 103 175</span>
                     </div>
                     <div className="flex items-center">
                       <Mail className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-foreground">Jortikisanda@gmail.com</span>
+                      <span className="text-gray-700">Jortikisanda@gmail.com</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-5 h-5 text-primary mr-3" />
-                      <span className="text-foreground">Segunda a Sexta: 8h - 17h</span>
+                      <span className="text-gray-700">Segunda a Sexta: 8h - 17h</span>
                     </div>
                   </div>
                   <div className="mt-6 flex gap-4">
@@ -277,10 +277,10 @@ export default function ContactPage() {
                   </div>
                 </div>
                 
-                <div className="h-64 bg-gradient-to-r from-primary/20 to-blue-900/20 rounded-lg flex items-center justify-center border border-border">
-                  <div className="text-center text-muted-foreground">
+                <div className="h-64 bg-gradient-to-r from-primary/20 to-blue-900/20 rounded-lg flex items-center justify-center border border-gray-200">
+                  <div className="text-center text-gray-600">
                     <MapPin className="w-16 h-16 mx-auto mb-4 text-primary" />
-                    <p className="text-foreground">Mapa da localização</p>
+                    <p className="text-gray-800">Mapa da localização</p>
                     <p className="text-sm">Luanda, Angola</p>
                   </div>
                 </div>
