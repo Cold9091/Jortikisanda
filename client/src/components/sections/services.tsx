@@ -166,17 +166,17 @@ export default function Services() {
         </div>
       </section>
       {/* Detailed Services */}
-      <section id="servicos" className="py-24 bg-white relative">
+      <section id="servicos" className="py-24 bg-gradient-to-br from-primary via-blue-800 to-blue-900 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-slide-up">
-            <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium mb-6">
               <Building className="mr-2" size={16} />
               Expertise Completa
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-primary mb-6 section-divider pt-6">
+            <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-white mb-6 section-divider pt-6">
               Serviços Especializados
             </h2>
-            <p className="text-gray-600 text-xl max-w-4xl mx-auto leading-relaxed">
+            <p className="text-blue-100 text-xl max-w-4xl mx-auto leading-relaxed">
               Oferecemos uma gama completa de serviços especializados para atender todas as necessidades da sua empresa com excelência e inovação
             </p>
           </div>
