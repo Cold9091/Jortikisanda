@@ -179,7 +179,7 @@ Mensagem: ${formData.message}`;
                     value={formData.service}
                     onValueChange={(value) => setFormData({ ...formData, service: value })}
                   >
-                    <SelectTrigger className="text-gray-900 placeholder:text-gray-500">
+                    <SelectTrigger className="text-gray-900 placeholder:text-gray-500 bg-white">
                       <SelectValue placeholder="Selecione um serviço" />
                     </SelectTrigger>
                     <SelectContent>
