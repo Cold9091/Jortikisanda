@@ -106,11 +106,11 @@ export default function Blog() {
   const regularPosts = blogPosts.filter(post => !post.featured);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-blue-800 to-blue-900">
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-blue-700">
+        <section className="py-20 bg-gradient-to-br from-primary/90 via-blue-800/90 to-blue-900/90">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center text-white">
               <h1 className="text-5xl font-bold mb-6">Blog JortikiSanda</h1>
@@ -120,11 +120,11 @@ export default function Blog() {
               
               {/* Search Bar */}
               <div className="max-w-2xl mx-auto relative">
-                <Search className="w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <Search className="w-5 h-5 absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" />
                 <input
                   type="text"
                   placeholder="Pesquisar artigos..."
-                  className="w-full pl-12 pr-4 py-4 rounded-full text-gray-900 text-lg focus:outline-none focus:ring-2 focus:ring-white"
+                  className="w-full pl-12 pr-4 py-4 rounded-full bg-white/95 backdrop-blur-sm text-gray-800 text-lg focus:outline-none focus:ring-2 focus:ring-primary border border-white/20"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />

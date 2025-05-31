@@ -96,15 +96,15 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-blue-800 to-blue-900">
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-background via-primary to-blue-900">
+        <section className="py-20 bg-gradient-to-br from-primary/90 via-blue-800/90 to-blue-900/90">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center text-foreground">
-              <h1 className="text-5xl font-bold mb-6 text-foreground">Entre em Contato</h1>
-              <p className="text-xl mb-8 max-w-3xl mx-auto text-muted-foreground">
+            <div className="text-center">
+              <h1 className="text-5xl font-bold mb-6 text-white">Entre em Contato</h1>
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
                 Estamos prontos para ajudar sua empresa a crescer. Entre em contato conosco 
                 e descubra como podemos transformar sua gestão contábil e fiscal.
               </p>
@@ -127,11 +127,11 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Info */}
-        <section className="py-20 bg-card">
+        <section className="py-20 bg-gradient-to-br from-primary/80 via-blue-800/80 to-blue-900/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="text-center p-6 bg-background rounded-xl hover:shadow-lg transition-all duration-300 border border-border">
+                <div key={index} className="text-center p-6 bg-white/95 backdrop-blur-sm rounded-xl hover:shadow-lg transition-all duration-300 border border-white/20">
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <info.icon className="w-8 h-8 text-primary" />
                   </div>

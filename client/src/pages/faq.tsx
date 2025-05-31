@@ -166,7 +166,7 @@ export default function FAQPage() {
         <FAQ />
 
         {/* Detailed FAQ by Categories */}
-        <section className="py-20 bg-card">
+        <section className="py-20 bg-gradient-to-br from-primary/80 via-blue-800/80 to-blue-900/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-foreground mb-4">
