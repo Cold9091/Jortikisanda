@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { File, MessageCircle, CalendarCheck, ChevronDown, TrendingUp, Users, Shield } from "lucide-react";
+import { File, MessageCircle, CalendarCheck, ChevronDown, TrendingUp, Users, Shield, Calculator, FileText, PiggyBank, BarChart3, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 // Componente de contador animado
@@ -58,12 +58,49 @@ function AnimatedCounter({ end, duration = 2000, suffix = "" }: { end: number; d
 }
 
 export default function Hero() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const slides = [
+    {
+      id: 1,
+      company: "JORTIKISANDA ANGOLA",
+      title: "Pensar Global, Agir Local",
+      description: "Ser referência na prestação de serviços contabilísticos, buscando o desenvolvimento social e económico justo das entidades e de seus colaboradores, sempre com responsabilidade e confiança dentro dos princípios éticos e profissionais.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
+      icon: Calculator,
+      link: "#servicos"
+    },
+    {
+      id: 2,
+      company: "JORTIKISANDA ANGOLA",
+      title: "Serviços Especializados",
+      description: "Oferecemos uma gama completa de serviços contabilísticos, auditoria, consultoria fiscal e análise financeira para empresas que buscam excelência e crescimento sustentável no mercado angolano.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
+      icon: FileText,
+      link: "#servicos"
+    },
+    {
+      id: 3,
+      company: "JORTIKISANDA ANGOLA",
+      title: "Planos Personalizados",
+      description: "Desenvolvemos soluções sob medida para cada tipo de empresa, desde startups até grandes corporações, com planos flexíveis que se adaptam às suas necessidades específicas de crescimento.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
+      icon: PiggyBank,
+      link: "#planos"
+    },
+    {
+      id: 4,
+      company: "JORTIKISANDA ANGOLA",
+      title: "Resultados Comprovados",
+      description: "Com mais de 15 anos de experiência, já ajudamos mais de 500 empresas a otimizar sua gestão contábil e fiscal, alcançando 99% de satisfação dos nossos clientes em todo território nacional.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
+      icon: BarChart3,
+      link: "#sobre"
+    }
+  ];
+
   const handleWhatsApp = () => {
     window.open("https://wa.me/244939103175?text=Olá! Gostaria de saber mais sobre os serviços da JortikiSanda.", "_blank");
-  };
-
-  const handleEmail = () => {
-    window.location.href = "mailto:Jortikisanda@gmail.com?subject=Solicitação de Orçamento";
   };
 
   const scrollToContact = () => {
@@ -80,113 +117,101 @@ export default function Hero() {
     }
   };
 
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  // Auto-advance slides
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 6000); // Change slide every 6 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentSlideData = slides[currentSlide];
+  const IconComponent = currentSlideData.icon;
+
   return (
     <>
-      <section id="inicio" className="relative min-h-screen bg-gradient-to-br from-primary via-blue-800 to-blue-900 text-white overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gold rounded-full filter blur-3xl animate-float"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-white rounded-full filter blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+      <section id="inicio" className="relative min-h-screen overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src={currentSlideData.image}
+            alt={currentSlideData.title}
+            className="w-full h-full object-cover transition-all duration-1000 ease-in-out"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8 animate-slide-up">
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium">
-                <Shield className="mr-2" size={16} />
-                Empresa líder em contabilidade em Angola
-              </div>
-              
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat leading-tight">
-                Organizamos sua{" "}
-                <span className="gradient-text">
-                  contabilidade
-                </span>
-                , impulsionamos seu{" "}
-                <span className="gradient-text">
-                  crescimento
-                </span>
-              </h1>
-              
-              <p className="text-lg md:text-xl text-blue-100 font-light leading-relaxed">
-                Especialistas em contabilidade, auditoria fiscal e análise financeira para empresas angolanas que buscam excelência e crescimento sustentável.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-6 pt-4">
-                <Button
-                  onClick={handleWhatsApp}
-                  className="group bg-green-500 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-green-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                >
-                  <MessageCircle className="mr-3 group-hover:bounce transition-transform" size={20} />
-                  Falar via WhatsApp
-                </Button>
-                <Button
-                  onClick={scrollToContact}
-                  variant="outline"
-                  className="group border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105 backdrop-blur-sm"
-                >
-                  <CalendarCheck className="mr-3 group-hover:scale-110 transition-transform" size={20} />
-                  Marcar Reunião
-                </Button>
-              </div>
-              
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 pt-6">
-                <div className="text-center animate-scale-in" style={{animationDelay: '0.2s'}}>
-                  <div className="text-2xl font-bold text-orange-accent">500+</div>
-                  <div className="text-sm text-blue-200">Clientes Ativos</div>
-                </div>
-                <div className="text-center animate-scale-in" style={{animationDelay: '0.4s'}}>
-                  <div className="text-2xl font-bold text-orange-accent">15+</div>
-                  <div className="text-sm text-blue-200">Anos de Experiência</div>
-                </div>
-                <div className="text-center animate-scale-in" style={{animationDelay: '0.6s'}}>
-                  <div className="text-2xl font-bold text-orange-accent">99%</div>
-                  <div className="text-sm text-blue-200">Satisfação</div>
-                </div>
-              </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 min-h-screen flex items-center">
+          <div className="max-w-2xl text-white space-y-6">
+            {/* Company Badge */}
+            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
+              <IconComponent className="mr-2" size={16} />
+              {currentSlideData.company}
             </div>
             
-            <div className="relative animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                  alt="Escritório profissional moderno"
-                  className="rounded-3xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
-                />
-                
-                {/* Floating Cards - Now positioned above the image */}
-                <div className="absolute -top-6 -left-6 z-10 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
-                  <div className="flex items-center">
-                    <div className="bg-green-100 p-2 rounded-lg mr-3">
-                      <TrendingUp className="text-green-600" size={20} />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-800">Crescimento</div>
-                      <div className="text-xs text-gray-600">+45% este ano</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="absolute -bottom-6 -right-6 z-10 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
-                  <div className="flex items-center">
-                    <div className="bg-blue-100 p-2 rounded-lg mr-3">
-                      <Users className="text-blue-600" size={20} />
-                    </div>
-                    <div>
-                      <div className="text-sm font-semibold text-gray-800">Equipe Expert</div>
-                      <div className="text-xs text-gray-600">50+ profissionais</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {/* Main Title */}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-montserrat leading-tight">
+              "{currentSlideData.title}"
+            </h1>
+            
+            {/* Description */}
+            <p className="text-lg md:text-xl text-blue-100 font-light leading-relaxed max-w-xl">
+              {currentSlideData.description}
+            </p>
+            
+            {/* CTA Button */}
+            <div className="pt-6">
+              <Button
+                onClick={handleWhatsApp}
+                className="bg-[#dc6014] hover:bg-[#dc6014]/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              >
+                Saiba mais
+              </Button>
             </div>
           </div>
           
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={scrollToNext}>
-            <ChevronDown className="text-white/70 hover:text-white transition-colors" size={32} />
+          {/* Navigation Arrows */}
+          <div className="absolute right-8 top-1/2 transform -translate-y-1/2 flex flex-col gap-4">
+            <button
+              onClick={prevSlide}
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 p-3 rounded-full transition-all duration-300 group"
+            >
+              <ChevronLeft className="text-white group-hover:scale-110 transition-transform" size={20} />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 p-3 rounded-full transition-all duration-300 group"
+            >
+              <ChevronRight className="text-white group-hover:scale-110 transition-transform" size={20} />
+            </button>
           </div>
+        </div>
+        
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-3">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentSlide 
+                  ? 'bg-[#dc6014] scale-125' 
+                  : 'bg-white/40 hover:bg-white/60'
+              }`}
+            />
+          ))}
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 right-8 animate-bounce cursor-pointer" onClick={scrollToNext}>
+          <ChevronDown className="text-white/70 hover:text-white transition-colors" size={32} />
         </div>
       </section>
       
