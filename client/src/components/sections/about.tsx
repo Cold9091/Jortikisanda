@@ -37,10 +37,10 @@ export default function About() {
   }, []);
 
   return (
-    <section id="quem-somos" className="py-24 bg-gradient-to-br from-blue-50 to-gray-50 relative overflow-hidden">
+    <section id="quem-somos" className="py-24 bg-gradient-to-br from-primary via-blue-800 to-blue-900 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-primary/10 to-transparent rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-tr from-gold/10 to-transparent rounded-full filter blur-3xl"></div>
+      <div className="absolute top-20 right-10 w-72 h-72 bg-gradient-to-br from-white/5 to-transparent rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-20 left-10 w-64 h-64 bg-gradient-to-tr from-gold/20 to-transparent rounded-full filter blur-3xl"></div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -121,25 +121,25 @@ export default function About() {
           </div>
           
           <div className="space-y-8 animate-slide-up">
-            <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-primary font-medium mb-4">
+            <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium mb-4">
               <Users className="mr-2" size={16} />
               Sobre a JortikiSanda
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-primary section-divider pt-6">
+            <h2 className="text-4xl md:text-5xl font-bold font-montserrat text-white section-divider pt-6">
               Quem Somos
             </h2>
             
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-blue-100 leading-relaxed">
               A JortikiSanda é uma empresa angolana especializada em serviços contábeis, auditoria e consultoria financeira, comprometida em oferecer soluções de excelência para empresas de todos os portes.
             </p>
             
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-blue-100 leading-relaxed">
               Com mais de 15 anos de experiência no mercado angolano, nossa equipe de profissionais qualificados oferece serviços personalizados que atendem às necessidades específicas de cada cliente, sempre em conformidade com a legislação nacional e as melhores práticas internacionais.
             </p>
             
             <div className="grid md:grid-cols-2 gap-6 pt-8">
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover-lift">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover-lift border border-white/20">
                 <div className="flex items-center mb-4">
                   <div className="bg-gradient-to-br from-primary/20 to-blue-100 p-3 rounded-xl mr-4">
                     <Target className="text-primary" size={24} />
@@ -153,7 +153,7 @@ export default function About() {
                 </p>
               </div>
               
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover-lift">
+              <div className="bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover-lift border border-white/20">
                 <div className="flex items-center mb-4">
                   <div className="bg-gradient-to-br from-gold/20 to-yellow-100 p-3 rounded-xl mr-4">
                     <Eye className="text-gold" size={24} />
@@ -168,12 +168,12 @@ export default function About() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-primary/5 to-gold/5 p-8 rounded-2xl">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 rounded-2xl">
               <div className="flex items-center mb-6">
                 <div className="bg-gradient-to-br from-red-100 to-pink-100 p-3 rounded-xl mr-4">
                   <Heart className="text-red-500" size={24} />
                 </div>
-                <h3 className="text-2xl font-semibold font-montserrat text-primary">
+                <h3 className="text-2xl font-semibold font-montserrat text-white">
                   Nossos Valores
                 </h3>
               </div>
@@ -186,7 +186,7 @@ export default function About() {
                   "Responsabilidade"
                 ].map((value, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-white/70 backdrop-blur-sm p-4 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105">
+                    <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-white/30">
                       <div className="text-sm font-medium text-primary">{value}</div>
                     </div>
                   </div>
@@ -197,12 +197,12 @@ export default function About() {
         </div>
         
         {/* Company Stats */}
-        <div className="mt-20 pt-16 border-t border-gray-200">
+        <div className="mt-20 pt-16 border-t border-white/20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold font-montserrat text-primary mb-4">
+            <h3 className="text-3xl font-bold font-montserrat text-white mb-4">
               Nossa Trajetória de Sucesso
             </h3>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
               Anos de dedicação e expertise resultaram em uma trajetória sólida de crescimento e reconhecimento no mercado angolano.
             </p>
           </div>
@@ -212,24 +212,24 @@ export default function About() {
               <div className="bg-gradient-to-br from-blue-100 to-blue-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Users className="text-primary" size={32} />
               </div>
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-gray-600 font-medium">Profissionais Certificados</div>
+              <div className="text-3xl font-bold text-white mb-2">50+</div>
+              <div className="text-blue-100 font-medium">Profissionais Certificados</div>
             </div>
             
             <div className="text-center group">
               <div className="bg-gradient-to-br from-green-100 to-green-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Award className="text-green-600" size={32} />
               </div>
-              <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
-              <div className="text-gray-600 font-medium">Anos de Experiência</div>
+              <div className="text-3xl font-bold text-white mb-2">15+</div>
+              <div className="text-blue-100 font-medium">Anos de Experiência</div>
             </div>
             
             <div className="text-center group">
               <div className="bg-gradient-to-br from-purple-100 to-purple-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Star className="text-purple-600" size={32} />
               </div>
-              <div className="text-3xl font-bold text-purple-600 mb-2">500+</div>
-              <div className="text-gray-600 font-medium">Empresas Atendidas</div>
+              <div className="text-3xl font-bold text-white mb-2">500+</div>
+              <div className="text-blue-100 font-medium">Empresas Atendidas</div>
             </div>
             
             <div className="text-center group">
@@ -237,7 +237,7 @@ export default function About() {
                 <Target className="text-gold" size={32} />
               </div>
               <div className="text-3xl font-bold text-gold mb-2">99%</div>
-              <div className="text-gray-600 font-medium">Satisfação dos Clientes</div>
+              <div className="text-blue-100 font-medium">Satisfação dos Clientes</div>
             </div>
           </div>
         </div>
