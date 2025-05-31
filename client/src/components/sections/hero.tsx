@@ -1,5 +1,61 @@
 import { Button } from "@/components/ui/button";
 import { File, MessageCircle, CalendarCheck, ChevronDown, TrendingUp, Users, Shield } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+
+// Componente de contador animado
+function AnimatedCounter({ end, duration = 2000, suffix = "" }: { end: number; duration?: number; suffix?: string }) {
+  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const counterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (counterRef.current) {
+      observer.observe(counterRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    let startTime: number;
+    const startCount = 0;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const currentCount = Math.floor(easeOutQuart * (end - startCount) + startCount);
+      
+      setCount(currentCount);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        setCount(end);
+      }
+    };
+
+    requestAnimationFrame(animate);
+  }, [isVisible, end, duration]);
+
+  return (
+    <div ref={counterRef} className="text-4xl font-bold mb-2">
+      {count}{suffix}
+    </div>
+  );
+}
 
 export default function Hero() {
   const handleWhatsApp = () => {
@@ -142,33 +198,41 @@ export default function Hero() {
       </section>
       
       {/* Stats Section */}
-      <section id="stats" className="py-20 bg-white">
+      <section id="stats" className="py-20 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-3xl">
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl">
+                <div className="text-primary">
+                  <AnimatedCounter end={500} suffix="+" />
+                </div>
                 <div className="text-gray-600 font-medium">Empresas Atendidas</div>
                 <div className="text-sm text-gray-500 mt-1">Em todo território nacional</div>
               </div>
             </div>
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-gold/10 to-yellow-100 p-8 rounded-3xl">
-                <div className="text-4xl font-bold text-gold mb-2">15+</div>
+              <div className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl">
+                <div className="text-gold">
+                  <AnimatedCounter end={15} suffix="+" />
+                </div>
                 <div className="text-gray-600 font-medium">Anos de Experiência</div>
                 <div className="text-sm text-gray-500 mt-1">No mercado angolano</div>
               </div>
             </div>
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-3xl">
-                <div className="text-4xl font-bold text-green-600 mb-2">99%</div>
+              <div className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl">
+                <div className="text-green-600">
+                  <AnimatedCounter end={99} suffix="%" />
+                </div>
                 <div className="text-gray-600 font-medium">Satisfação dos Clientes</div>
                 <div className="text-sm text-gray-500 mt-1">Avaliação média</div>
               </div>
             </div>
             <div className="text-center hover-lift">
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-3xl">
-                <div className="text-4xl font-bold text-purple-600 mb-2">50+</div>
+              <div className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl">
+                <div className="text-purple-600">
+                  <AnimatedCounter end={50} suffix="+" />
+                </div>
                 <div className="text-gray-600 font-medium">Profissionais</div>
                 <div className="text-sm text-gray-500 mt-1">Certificados e experientes</div>
               </div>
