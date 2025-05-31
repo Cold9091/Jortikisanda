@@ -28,9 +28,16 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 animate-fade-in">
-              <h1 className="text-2xl font-bold font-montserrat text-white">
-                JortikiSanda
-              </h1>
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/assets/logo.png" 
+                  alt="JortikiSanda Logo" 
+                  className="h-10 w-10 object-contain"
+                />
+                <h1 className="text-2xl font-bold font-montserrat text-white">
+                  JortikiSanda
+                </h1>
+              </div>
             </Link>
           </div>
           
