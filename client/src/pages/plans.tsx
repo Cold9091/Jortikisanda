@@ -244,7 +244,7 @@ export default function PlansPage() {
               </div>
 
               <div className="bg-background rounded-xl p-6 shadow-sm border border-border">
-                <h3 className="text-lg font-semibold text-foreground mb-3">
+                <h3 className="text-lg font-semibold mb-3 text-[#1d40ad]">
                   Há período de fidelidade?
                 </h3>
                 <p className="text-muted-foreground">
