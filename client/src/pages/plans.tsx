@@ -225,7 +225,7 @@ export default function PlansPage() {
 
             <div className="space-y-6">
               <div className="rounded-xl p-6 shadow-sm border border-border bg-[#ffffff]">
-                <h3 className="text-lg font-semibold text-foreground mb-3">
+                <h3 className="text-lg font-semibold mb-3 text-[#1d40ad]">
                   Posso mudar de plano a qualquer momento?
                 </h3>
                 <p className="text-muted-foreground">
