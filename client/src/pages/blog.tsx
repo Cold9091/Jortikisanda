@@ -134,7 +134,7 @@ export default function Blog() {
         </section>
 
         {/* Categories Filter */}
-        <section className="py-8 bg-white border-b">
+        <section className="py-8 bg-gradient-to-br from-primary/70 via-blue-800/70 to-blue-900/70 border-b border-white/20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap justify-center gap-4">
               {categories.map((category) => (
@@ -156,7 +156,7 @@ export default function Blog() {
 
         {/* Featured Post */}
         {featuredPost && (
-          <section className="py-20 bg-gray-50">
+          <section className="py-20 bg-gradient-to-br from-primary/60 via-blue-800/60 to-blue-900/60">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Artigo em Destaque</h2>
