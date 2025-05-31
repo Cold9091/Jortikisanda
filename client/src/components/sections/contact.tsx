@@ -227,7 +227,7 @@ Mensagem: ${formData.message}`;
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="text-gold mr-4 mt-1">
+                    <div className="mr-4 mt-1" style={{color: '#dc6014'}}>
                       <MapPin size={20} />
                     </div>
                     <div>
