@@ -117,7 +117,7 @@ export default function ContactPage() {
                   <MessageCircle className="w-5 h-5 mr-2" />
                   WhatsApp
                 </Button>
-                <Button size="lg" className="bg-gold hover:bg-gold/80 text-background px-8 py-3">
+                <Button size="lg" className="bg-[#dc6014] text-[#ffffff] hover:bg-gold/80 px-8 py-3">
                   <Calendar className="w-5 h-5 mr-2" />
                   Agendar Reunião
                 </Button>
