@@ -35,7 +35,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "15 de Janeiro, 2024",
       readTime: "8 min",
-      image: "📊",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       featured: true
     },
     {
@@ -46,7 +46,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "22 de Janeiro, 2024",
       readTime: "12 min",
-      image: "💰",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       featured: false
     },
     {
@@ -57,7 +57,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "29 de Janeiro, 2024",
       readTime: "10 min",
-      image: "🧾",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       featured: false
     },
     {
@@ -68,7 +68,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "5 de Fevereiro, 2024",
       readTime: "6 min",
-      image: "💻",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       featured: false
     },
     {
@@ -79,7 +79,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "12 de Fevereiro, 2024",
       readTime: "15 min",
-      image: "🏢",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       featured: false
     },
     {
@@ -90,7 +90,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "19 de Fevereiro, 2024",
       readTime: "7 min",
-      image: "📈",
+      image: "https://images.unsplash.com/photo-1590479773265-7464e5d48118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       featured: false
     }
   ];
