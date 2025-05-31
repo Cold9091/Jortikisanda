@@ -204,6 +204,7 @@ Mensagem: ${formData.message}`;
                     rows={4}
                     placeholder="Descreva como podemos ajudar..."
                     required
+                    className="bg-white text-gray-900"
                   />
                 </div>
                 <Button
