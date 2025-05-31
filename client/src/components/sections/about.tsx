@@ -1,6 +1,41 @@
-import { Target, Eye, Heart, Star, Users, Award } from "lucide-react";
+import { Target, Eye, Heart, Star, Users, Award, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function About() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const teamImages = [
+    {
+      src: "@assets/1748686009703.webp",
+      alt: "Equipe da JortikiSanda - Foto ilustrativa",
+      title: "Nossa Equipe Principal"
+    },
+    {
+      src: "@assets/1748686010963.webp", 
+      alt: "Profissionais da JortikiSanda",
+      title: "Especialistas Certificados"
+    },
+    {
+      src: "@assets/1748686021141.webp",
+      alt: "Ambiente de trabalho profissional",
+      title: "Escritório Moderno"
+    }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % teamImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + teamImages.length) % teamImages.length);
+  };
+
+  // Auto-advance slides
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="quem-somos" className="py-24 bg-gradient-to-br from-blue-50 to-gray-50 relative overflow-hidden">
       {/* Background decorations */}
@@ -10,16 +45,57 @@ export default function About() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="relative animate-fade-in">
-            <div className="relative z-10">
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Equipe profissional de contabilidade"
-                className="rounded-3xl shadow-2xl w-full h-auto hover:scale-105 transition-transform duration-500"
-              />
+            {/* Team Carousel */}
+            <div className="relative z-10 overflow-hidden rounded-3xl shadow-2xl">
+              <div className="relative">
+                <img
+                  src={teamImages[currentSlide].src}
+                  alt={teamImages[currentSlide].alt}
+                  className="w-full h-auto transition-all duration-1000 ease-in-out object-cover aspect-[4/3]"
+                />
+                
+                {/* Carousel Navigation */}
+                <div className="absolute top-1/2 -translate-y-1/2 left-4 right-4 flex justify-between pointer-events-none">
+                  <button
+                    onClick={prevSlide}
+                    className="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/20 p-2 rounded-full transition-all duration-300 group pointer-events-auto"
+                  >
+                    <ChevronLeft className="text-white group-hover:scale-110 transition-transform" size={16} />
+                  </button>
+                  <button
+                    onClick={nextSlide}
+                    className="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/20 p-2 rounded-full transition-all duration-300 group pointer-events-auto"
+                  >
+                    <ChevronRight className="text-white group-hover:scale-110 transition-transform" size={16} />
+                  </button>
+                </div>
+                
+                {/* Slide Indicators */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                  {teamImages.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentSlide(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentSlide 
+                          ? 'bg-white scale-125' 
+                          : 'bg-white/50 hover:bg-white/75'
+                      }`}
+                    />
+                  ))}
+                </div>
+                
+                {/* Image Title Overlay */}
+                <div className="absolute bottom-8 left-4 right-4">
+                  <div className="bg-black/40 backdrop-blur-sm rounded-lg p-3">
+                    <h4 className="text-white font-medium text-sm">{teamImages[currentSlide].title}</h4>
+                  </div>
+                </div>
+              </div>
             </div>
             
             {/* Floating achievement cards */}
-            <div className="absolute -top-6 -right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
+            <div className="absolute -top-6 -right-6 z-20 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
               <div className="flex items-center">
                 <div className="bg-green-100 p-2 rounded-lg mr-3">
                   <Award className="text-green-600" size={20} />
@@ -31,7 +107,7 @@ export default function About() {
               </div>
             </div>
             
-            <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
+            <div className="absolute -bottom-6 -left-6 z-20 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
               <div className="flex items-center">
                 <div className="bg-blue-100 p-2 rounded-lg mr-3">
                   <Star className="text-blue-600" size={20} />
