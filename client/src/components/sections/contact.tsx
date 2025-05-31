@@ -239,7 +239,7 @@ Mensagem: ${formData.message}`;
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-gold mr-4 mt-1">
+                    <div className="mr-4 mt-1" style={{color: '#dc6014'}}>
                       <Phone size={20} />
                     </div>
                     <div>
@@ -251,7 +251,7 @@ Mensagem: ${formData.message}`;
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-gold mr-4 mt-1">
+                    <div className="mr-4 mt-1" style={{color: '#dc6014'}}>
                       <Mail size={20} />
                     </div>
                     <div>
@@ -263,7 +263,7 @@ Mensagem: ${formData.message}`;
                     </div>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-gold mr-4 mt-1">
+                    <div className="mr-4 mt-1" style={{color: '#dc6014'}}>
                       <Clock size={20} />
                     </div>
                     <div>
