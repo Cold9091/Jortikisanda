@@ -41,7 +41,7 @@ export default function Hero() {
                 Empresa líder em contabilidade em Angola
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-montserrat leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat leading-tight">
                 Organizamos sua{" "}
                 <span className="gradient-text">
                   contabilidade
@@ -52,7 +52,7 @@ export default function Hero() {
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-blue-100 font-light leading-relaxed">
+              <p className="text-lg md:text-xl text-blue-100 font-light leading-relaxed">
                 Especialistas em contabilidade, auditoria fiscal e análise financeira para empresas angolanas que buscam excelência e crescimento sustentável.
               </p>
               
@@ -82,52 +82,52 @@ export default function Hero() {
               </div>
               
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 pt-8">
+              <div className="grid grid-cols-3 gap-6 pt-6">
                 <div className="text-center animate-scale-in" style={{animationDelay: '0.2s'}}>
-                  <div className="text-3xl font-bold text-orange-accent">500+</div>
+                  <div className="text-2xl font-bold text-orange-accent">500+</div>
                   <div className="text-sm text-blue-200">Clientes Ativos</div>
                 </div>
                 <div className="text-center animate-scale-in" style={{animationDelay: '0.4s'}}>
-                  <div className="text-3xl font-bold text-orange-accent">15+</div>
+                  <div className="text-2xl font-bold text-orange-accent">15+</div>
                   <div className="text-sm text-blue-200">Anos de Experiência</div>
                 </div>
                 <div className="text-center animate-scale-in" style={{animationDelay: '0.6s'}}>
-                  <div className="text-3xl font-bold text-orange-accent">99%</div>
+                  <div className="text-2xl font-bold text-orange-accent">99%</div>
                   <div className="text-sm text-blue-200">Satisfação</div>
                 </div>
               </div>
             </div>
             
             <div className="relative animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <div className="relative z-10">
+              <div className="relative">
                 <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
                   alt="Escritório profissional moderno"
                   className="rounded-3xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
                 />
-              </div>
-              
-              {/* Floating Cards */}
-              <div className="absolute -top-6 -left-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
-                <div className="flex items-center">
-                  <div className="bg-green-100 p-2 rounded-lg mr-3">
-                    <TrendingUp className="text-green-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-800">Crescimento</div>
-                    <div className="text-xs text-gray-600">+45% este ano</div>
+                
+                {/* Floating Cards - Now positioned above the image */}
+                <div className="absolute -top-6 -left-6 z-10 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float">
+                  <div className="flex items-center">
+                    <div className="bg-green-100 p-2 rounded-lg mr-3">
+                      <TrendingUp className="text-green-600" size={20} />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-800">Crescimento</div>
+                      <div className="text-xs text-gray-600">+45% este ano</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              
-              <div className="absolute -bottom-6 -right-6 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
-                <div className="flex items-center">
-                  <div className="bg-blue-100 p-2 rounded-lg mr-3">
-                    <Users className="text-blue-600" size={20} />
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-gray-800">Equipe Expert</div>
-                    <div className="text-xs text-gray-600">50+ profissionais</div>
+                
+                <div className="absolute -bottom-6 -right-6 z-10 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl animate-float" style={{animationDelay: '1s'}}>
+                  <div className="flex items-center">
+                    <div className="bg-blue-100 p-2 rounded-lg mr-3">
+                      <Users className="text-blue-600" size={20} />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold text-gray-800">Equipe Expert</div>
+                      <div className="text-xs text-gray-600">50+ profissionais</div>
+                    </div>
                   </div>
                 </div>
               </div>
