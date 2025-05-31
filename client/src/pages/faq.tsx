@@ -231,7 +231,7 @@ export default function FAQPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {contactMethods.map((method, index) => (
                 <div key={index} className="text-center p-6 rounded-xl hover:shadow-lg transition-all duration-300 border border-border bg-[#fafafa]">
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${method.color.replace('text-', 'bg-').replace('600', '100').replace('500', '100')}`}>
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#dbeafe]">
                     <method.icon className={`w-8 h-8 ${method.color}`} />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-[#1d40ad]">{method.title}</h3>
