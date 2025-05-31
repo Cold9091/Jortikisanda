@@ -193,7 +193,7 @@ export default function FAQPage() {
                             <HelpCircle className="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" />
                             {faq.question}
                           </h4>
-                          <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                          <p className="leading-relaxed text-[#10378c]">{faq.answer}</p>
                         </div>
                       ))}
                     </div>
