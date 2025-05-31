@@ -79,11 +79,10 @@ export default function FAQ() {
       {/* Background decorations */}
       <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-br from-gold/10 to-transparent rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-tr from-primary/10 to-transparent rounded-full filter blur-3xl"></div>
-      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full text-gold font-medium mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full font-medium mb-6 text-[#dc6014]">
             <HelpCircle className="mr-2" size={16} />
             Perguntas Frequentes
           </div>
