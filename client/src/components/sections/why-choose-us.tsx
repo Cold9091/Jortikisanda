@@ -35,9 +35,9 @@ export default function WhyChooseUs() {
           
           <div className="text-center group hover-lift animate-scale-in" style={{animationDelay: '0.1s'}}>
             <div className="bg-gradient-to-br from-white/20 to-white/30 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-white/20">
-              <Shield className="text-gold" size={48} />
+              <Shield style={{color: '#dc6014'}} size={48} />
             </div>
-            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 group-hover:text-gold transition-colors">
+            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#dc6014'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
               Confiança
             </h3>
             <p className="text-blue-100 leading-relaxed">
@@ -47,9 +47,9 @@ export default function WhyChooseUs() {
           
           <div className="text-center group hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
             <div className="bg-gradient-to-br from-white/20 to-white/30 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-white/20">
-              <Clock className="text-gold" size={48} />
+              <Clock style={{color: '#dc6014'}} size={48} />
             </div>
-            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 group-hover:text-gold transition-colors">
+            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#dc6014'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
               Agilidade
             </h3>
             <p className="text-blue-100 leading-relaxed">
@@ -59,9 +59,9 @@ export default function WhyChooseUs() {
           
           <div className="text-center group hover-lift animate-scale-in" style={{animationDelay: '0.3s'}}>
             <div className="bg-gradient-to-br from-white/20 to-white/30 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-white/20">
-              <Handshake className="text-gold" size={48} />
+              <Handshake style={{color: '#dc6014'}} size={48} />
             </div>
-            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 group-hover:text-gold transition-colors">
+            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 transition-colors" onMouseEnter={(e) => e.currentTarget.style.color = '#dc6014'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
               Parceria
             </h3>
             <p className="text-blue-100 leading-relaxed">
