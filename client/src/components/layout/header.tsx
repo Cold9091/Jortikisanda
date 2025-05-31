@@ -39,7 +39,7 @@ export default function Header() {
               <Link
                 href="/"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 Início
@@ -47,7 +47,7 @@ export default function Header() {
               <Link
                 href="/sobre"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/sobre") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/sobre") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 Sobre Nós
@@ -55,7 +55,7 @@ export default function Header() {
               <Link
                 href="/servicos"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/servicos") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/servicos") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 Serviços
@@ -63,7 +63,7 @@ export default function Header() {
               <Link
                 href="/planos"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/planos") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/planos") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 Planos
@@ -71,7 +71,7 @@ export default function Header() {
               <Link
                 href="/blog"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/blog") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/blog") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 Blog
@@ -79,7 +79,7 @@ export default function Header() {
               <Link
                 href="/depoimentos"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/depoimentos") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/depoimentos") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 Depoimentos
@@ -87,7 +87,7 @@ export default function Header() {
               <Link
                 href="/faq"
                 className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
-                  isActive("/faq") ? "text-gold" : "text-white hover:text-gold"
+                  isActive("/faq") ? "text-orange-accent" : "text-white hover:text-orange-accent"
                 }`}
               >
                 FAQ
@@ -106,7 +106,7 @@ export default function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-gold"
+              className="text-white hover:text-orange-accent"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -122,7 +122,7 @@ export default function Header() {
               href="/"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Início
@@ -131,7 +131,7 @@ export default function Header() {
               href="/sobre"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/sobre") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/sobre") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Sobre Nós
@@ -140,7 +140,7 @@ export default function Header() {
               href="/servicos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/servicos") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/servicos") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Serviços
@@ -149,7 +149,7 @@ export default function Header() {
               href="/planos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/planos") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/planos") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Planos
@@ -158,7 +158,7 @@ export default function Header() {
               href="/blog"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/blog") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/blog") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Blog
@@ -167,7 +167,7 @@ export default function Header() {
               href="/depoimentos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/depoimentos") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/depoimentos") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Depoimentos
@@ -176,7 +176,7 @@ export default function Header() {
               href="/faq"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/faq") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/faq") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               FAQ
@@ -185,7 +185,7 @@ export default function Header() {
               href="/contato"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/contato") ? "text-gold" : "text-white hover:text-gold"
+                isActive("/contato") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Contato
