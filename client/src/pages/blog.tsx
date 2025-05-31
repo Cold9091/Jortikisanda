@@ -164,8 +164,12 @@ export default function Blog() {
               
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
-                  <div className="h-64 lg:h-auto bg-gradient-to-r from-primary to-blue-700 flex items-center justify-center">
-                    <span className="text-6xl">{featuredPost.image}</span>
+                  <div className="h-64 lg:h-auto overflow-hidden">
+                    <img 
+                      src={featuredPost.image} 
+                      alt={featuredPost.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="p-8 lg:p-12">
                     <div className="flex items-center mb-4">
@@ -214,8 +218,12 @@ export default function Blog() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPosts.filter(post => !post.featured).map((post, index) => (
                   <article key={index} className="bg-white border border-gray-200 rounded-xl hover:shadow-lg transition-all duration-300">
-                    <div className="h-48 bg-gradient-to-r from-primary/20 to-blue-100 flex items-center justify-center rounded-t-xl">
-                      <span className="text-4xl">{post.image}</span>
+                    <div className="h-48 overflow-hidden rounded-t-xl">
+                      <img 
+                        src={post.image} 
+                        alt={post.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
                     <div className="p-6">
                       <div className="flex items-center mb-3">

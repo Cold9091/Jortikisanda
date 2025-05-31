@@ -24,7 +24,7 @@ export default function BlogPost() {
       author: "Equipe JortikiSanda",
       date: "15 de Janeiro, 2024",
       readTime: "8 min",
-      image: "📊",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       content: `
         <p>A legislação fiscal angolana passou por importantes atualizações em 2024, trazendo mudanças significativas que impactam diretamente as empresas de todos os portes. Neste artigo, vamos detalhar as principais alterações e como elas afetam o seu negócio.</p>
 
@@ -71,7 +71,7 @@ export default function BlogPost() {
       author: "Equipe JortikiSanda",
       date: "22 de Janeiro, 2024",
       readTime: "12 min",
-      image: "💰",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
       content: `
         <p>A gestão financeira é um dos pilares fundamentais para o sucesso de qualquer empresa, especialmente para pequenos negócios que precisam otimizar cada recurso disponível. Neste guia completo, vamos abordar as melhores práticas para manter a saúde financeira da sua empresa.</p>
 
@@ -184,8 +184,12 @@ export default function BlogPost() {
         <section className="py-12">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="prose prose-lg max-w-none">
-              <div className="h-64 bg-gradient-to-r from-primary to-blue-700 rounded-xl flex items-center justify-center mb-8">
-                <span className="text-8xl">{currentPost.image}</span>
+              <div className="h-64 overflow-hidden rounded-xl mb-8">
+                <img 
+                  src={currentPost.image} 
+                  alt={currentPost.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
               <div 
