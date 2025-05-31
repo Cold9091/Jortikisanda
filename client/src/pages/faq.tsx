@@ -217,13 +217,13 @@ export default function FAQPage() {
         </section>
 
         {/* Quick Contact */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-gradient-to-br from-primary via-blue-800 to-blue-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Não Encontrou sua Resposta?
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-white/90">
                 Entre em contato conosco através dos canais abaixo
               </p>
             </div>
