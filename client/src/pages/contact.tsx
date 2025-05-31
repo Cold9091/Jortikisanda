@@ -218,7 +218,7 @@ export default function ContactPage() {
                 </div>
                 <div className="mt-6">
                   <Link href="/faq">
-                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white bg-white">
                       Ver Todas as FAQ
                     </Button>
                   </Link>
