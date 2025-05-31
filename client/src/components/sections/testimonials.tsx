@@ -36,7 +36,6 @@ export default function Testimonials() {
       {/* Background decorations */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-primary/5 to-transparent rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-72 h-72 bg-gradient-to-tr from-gold/5 to-transparent rounded-full filter blur-3xl"></div>
-      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
@@ -90,13 +89,13 @@ export default function Testimonials() {
           </div>
           
           <div className="text-center bg-gradient-to-br from-gold/10 to-yellow-50 rounded-3xl p-8">
-            <div className="text-4xl font-bold text-gold mb-2">15+</div>
+            <div className="text-4xl font-bold mb-2 text-[#002e66]">15+</div>
             <div className="text-lg font-semibold text-gray-700 mb-1">Anos de Experiência</div>
             <div className="text-sm text-gray-600">Servindo Angola</div>
           </div>
           
           <div className="text-center bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8">
-            <div className="text-4xl font-bold text-green-600 mb-2">99%</div>
+            <div className="text-4xl font-bold mb-2 text-[#002e66]">99%</div>
             <div className="text-lg font-semibold text-gray-700 mb-1">Satisfação dos Clientes</div>
             <div className="text-sm text-gray-600">Taxa de retenção</div>
           </div>

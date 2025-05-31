@@ -111,9 +111,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-blue-100">
-            &copy; 2024 JortikiSanda. Todos os direitos reservados.
-          </p>
+          <p className="text-blue-100">© 2025 JortikiSanda. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

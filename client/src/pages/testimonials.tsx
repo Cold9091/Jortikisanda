@@ -129,7 +129,7 @@ export default function TestimonialsPage() {
                   <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <stat.icon className={`w-10 h-10 ${stat.color}`} />
                   </div>
-                  <div className={`text-4xl font-bold mb-2 ${stat.color}`}>{stat.number}</div>
+                  <div className="text-4xl font-bold mb-2 text-[#002e66]">{stat.number}</div>
                   <div className="text-gray-700 text-lg">{stat.label}</div>
                 </div>
               ))}
@@ -143,10 +143,10 @@ export default function TestimonialsPage() {
         <section className="py-20 bg-gradient-to-br from-primary/70 via-blue-800/70 to-blue-900/70">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold mb-4 text-[#ffffff]">
                 Histórias de Sucesso Detalhadas
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-[#fafcff]">
                 Conheça como transformamos a gestão de empresas em diversos setores
               </p>
             </div>

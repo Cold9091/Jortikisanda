@@ -148,7 +148,7 @@ export default function ServicesPage() {
               {detailedServices.map((service, index) => (
                 <div key={index} className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-white/20">
                   <div className="flex items-start mb-6">
-                    <div className={`w-16 h-16 rounded-full flex items-center justify-center mr-6 ${getColorClasses(service.color)}`}>
+                    <div className="w-16 h-16 rounded-full flex items-center justify-center mr-6 text-[#002e66] bg-[#6b99fa5c]">
                       <service.icon className="w-8 h-8" />
                     </div>
                     <div>
@@ -193,24 +193,24 @@ export default function ServicesPage() {
               </div>
 
               <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
-                <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-gold">2</span>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#002e6633]">
+                  <span className="text-2xl font-bold text-[#002e66]">2</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Proposta Personalizada</h3>
                 <p className="text-gray-600">Elaboramos uma solução sob medida para você</p>
               </div>
 
               <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
-                <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-green-500">3</span>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#002e6633]">
+                  <span className="text-2xl font-bold text-[#002e66]">3</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Implementação</h3>
                 <p className="text-gray-600">Colocamos os serviços em funcionamento</p>
               </div>
 
               <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
-                <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-blue-500">4</span>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#002e6633]">
+                  <span className="text-2xl font-bold text-[#002e66]">4</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">Acompanhamento</h3>
                 <p className="text-gray-600">Monitoramos e otimizamos continuamente</p>

@@ -108,7 +108,7 @@ export default function Services() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-slide-up">
-            <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full text-gold font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full font-medium mb-6 text-[#dc6014]">
               <Calculator className="mr-2" size={16} />
               Soluções Especializadas
             </div>
@@ -165,7 +165,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
       {/* Detailed Services */}
       <section id="servicos" className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -226,7 +225,7 @@ export default function Services() {
                     const element = document.getElementById("contato");
                     if (element) element.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="bg-gold text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105"
+                  className="text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105 bg-[#dc6014]"
                 >
                   Solicitar Consulta Gratuita
                 </button>
