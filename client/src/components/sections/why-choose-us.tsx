@@ -23,9 +23,9 @@ export default function WhyChooseUs() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center group hover-lift animate-scale-in">
             <div className="bg-gradient-to-br from-white/20 to-white/30 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 backdrop-blur-sm border border-white/20">
-              <Award className="text-gold" size={48} />
+              <Award style={{color: '#dc6014'}} size={48} />
             </div>
-            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 group-hover:text-gold transition-colors">
+            <h3 className="text-2xl font-semibold font-montserrat text-white mb-4 transition-colors" style={{'--hover-color': '#dc6014'} as React.CSSProperties} onMouseEnter={(e) => e.currentTarget.style.color = '#dc6014'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
               Experiência
             </h3>
             <p className="text-blue-100 leading-relaxed">
