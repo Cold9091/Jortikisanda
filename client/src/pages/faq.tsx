@@ -251,31 +251,7 @@ export default function FAQPage() {
           </div>
         </section>
 
-        {/* Response Time Info */}
-        <section className="py-20 bg-card">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-background rounded-xl shadow-lg p-8 text-center border border-border">
-              <Clock className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-foreground mb-4">
-                Tempos de Resposta
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div>
-                  <div className="text-2xl font-bold text-green-500 mb-1">2-4h</div>
-                  <div className="text-muted-foreground">Consultas por WhatsApp</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-blue-500 mb-1">24h</div>
-                  <div className="text-muted-foreground">Consultas por Email</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-gold mb-1">Imediato</div>
-                  <div className="text-muted-foreground">Atendimento Telefónico</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </main>
       <Footer />
     </div>
