@@ -138,7 +138,7 @@ export default function FAQ() {
                       <step.icon className="text-primary" size={20} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold text-primary mb-1 group-hover:text-gold transition-colors">
+                      <h4 className="font-semibold mb-1 group-hover:text-gold transition-colors text-[#dc6014]">
                         {step.title}
                       </h4>
                       <p className="text-gray-600 text-sm mb-2 leading-relaxed">
