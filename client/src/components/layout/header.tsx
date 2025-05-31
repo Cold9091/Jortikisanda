@@ -21,14 +21,14 @@ export default function Header() {
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-background/95 backdrop-blur-sm shadow-xl py-2 border-b border-border' 
-        : 'bg-background/90 backdrop-blur-sm shadow-lg py-3 border-b border-border'
+        ? 'bg-gradient-to-r from-primary via-blue-800 to-blue-900 backdrop-blur-sm shadow-xl py-2' 
+        : 'bg-gradient-to-r from-primary/95 via-blue-800/95 to-blue-900/95 backdrop-blur-sm shadow-lg py-3'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 animate-fade-in">
-              <h1 className="text-2xl font-bold font-montserrat text-foreground">
+              <h1 className="text-2xl font-bold font-montserrat text-white">
                 JortikiSanda
               </h1>
             </Link>
@@ -38,56 +38,56 @@ export default function Header() {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 href="/"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Início
               </Link>
               <Link
                 href="/sobre"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/sobre") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/sobre") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Sobre Nós
               </Link>
               <Link
                 href="/servicos"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/servicos") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/servicos") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Serviços
               </Link>
               <Link
                 href="/planos"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/planos") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/planos") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Planos
               </Link>
               <Link
                 href="/blog"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/blog") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/blog") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Blog
               </Link>
               <Link
                 href="/depoimentos"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/depoimentos") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/depoimentos") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 Depoimentos
               </Link>
               <Link
                 href="/faq"
-                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-gold/10 ${
-                  isActive("/faq") ? "text-primary" : "text-foreground hover:text-gold"
+                className={`relative px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 ${
+                  isActive("/faq") ? "text-gold" : "text-white hover:text-gold"
                 }`}
               >
                 FAQ
@@ -106,7 +106,7 @@ export default function Header() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground hover:text-gold"
+              className="text-white hover:text-gold"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -117,12 +117,12 @@ export default function Header() {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gradient-to-r from-primary via-blue-800 to-blue-900 border-t border-white/20">
             <Link
               href="/"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Início
@@ -131,7 +131,7 @@ export default function Header() {
               href="/sobre"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/sobre") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/sobre") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Sobre Nós
@@ -140,7 +140,7 @@ export default function Header() {
               href="/servicos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/servicos") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/servicos") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Serviços
@@ -149,7 +149,7 @@ export default function Header() {
               href="/planos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/planos") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/planos") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Planos
@@ -158,7 +158,7 @@ export default function Header() {
               href="/blog"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/blog") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/blog") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Blog
@@ -167,7 +167,7 @@ export default function Header() {
               href="/depoimentos"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/depoimentos") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/depoimentos") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Depoimentos
@@ -176,7 +176,7 @@ export default function Header() {
               href="/faq"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/faq") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/faq") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               FAQ
@@ -185,7 +185,7 @@ export default function Header() {
               href="/contato"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/contato") ? "text-primary" : "text-foreground hover:text-gold"
+                isActive("/contato") ? "text-gold" : "text-white hover:text-gold"
               }`}
             >
               Contato
