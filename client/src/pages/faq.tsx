@@ -180,7 +180,7 @@ export default function FAQPage() {
             {filteredCategories.length > 0 ? (
               <div className="space-y-12">
                 {filteredCategories.map((category, categoryIndex) => (
-                  <div key={categoryIndex} className="bg-background rounded-xl shadow-lg p-8 border border-border">
+                  <div key={categoryIndex} className="rounded-xl shadow-lg p-8 border border-border bg-[#fafafa]">
                     <div className="flex items-center mb-8">
                       <span className="text-3xl mr-4">{category.icon}</span>
                       <h3 className="text-2xl font-bold text-foreground">{category.title}</h3>
