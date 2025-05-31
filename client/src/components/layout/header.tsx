@@ -34,7 +34,7 @@ export default function Header() {
                   alt="JortikiSanda Logo" 
                   className="h-10 w-10 object-contain"
                 />
-                <h1 className="text-2xl font-bold font-montserrat text-white">
+                <h1 className="font-montserrat text-white font-medium text-[18px]">
                   JortikiSanda
                 </h1>
               </div>
@@ -120,7 +120,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-      
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden">
