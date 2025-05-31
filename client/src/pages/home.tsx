@@ -15,31 +15,31 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-blue-800 to-blue-900">
       <Header />
       <main>
         <Hero />
         
         {/* Quick Navigation Section */}
-        <section className="py-20 bg-card">
+        <section className="py-20 bg-gradient-to-br from-primary/90 via-blue-800/90 to-blue-900/90">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Explore Nossos Serviços
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-blue-100">
                 Navegue pelas nossas páginas especializadas para conhecer melhor nossos serviços
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Link href="/servicos">
-                <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-border">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-white/20">
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
                     <Calculator className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Nossos Serviços</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Nossos Serviços</h3>
+                  <p className="text-gray-600 mb-4">
                     Contabilidade, assessoria fiscal, gestão empresarial e muito mais
                   </p>
                   <div className="flex items-center text-primary font-medium">
@@ -49,12 +49,12 @@ export default function Home() {
               </Link>
 
               <Link href="/planos">
-                <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-border">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-white/20">
                   <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mb-6">
                     <FileText className="w-8 h-8 text-gold" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Nossos Planos</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Nossos Planos</h3>
+                  <p className="text-gray-600 mb-4">
                     Básico, Médio e Avançado - encontre o plano ideal para sua empresa
                   </p>
                   <div className="flex items-center text-primary font-medium">
@@ -64,12 +64,12 @@ export default function Home() {
               </Link>
 
               <Link href="/blog">
-                <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-border">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-white/20">
                   <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-6">
                     <BookOpen className="w-8 h-8 text-green-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Blog</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Blog</h3>
+                  <p className="text-gray-600 mb-4">
                     Artigos e insights sobre contabilidade e gestão empresarial em Angola
                   </p>
                   <div className="flex items-center text-primary font-medium">
@@ -79,12 +79,12 @@ export default function Home() {
               </Link>
 
               <Link href="/sobre">
-                <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-border">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-white/20">
                   <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mb-6">
                     <Users className="w-8 h-8 text-blue-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Sobre Nós</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Sobre Nós</h3>
+                  <p className="text-gray-600 mb-4">
                     Conheça nossa história, valores e por que somos a melhor escolha
                   </p>
                   <div className="flex items-center text-primary font-medium">
@@ -94,12 +94,12 @@ export default function Home() {
               </Link>
 
               <Link href="/depoimentos">
-                <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-border">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-white/20">
                   <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-6">
                     <MessageCircle className="w-8 h-8 text-purple-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Depoimentos</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Depoimentos</h3>
+                  <p className="text-gray-600 mb-4">
                     Veja o que nossos clientes falam sobre nossos serviços
                   </p>
                   <div className="flex items-center text-primary font-medium">
@@ -109,12 +109,12 @@ export default function Home() {
               </Link>
 
               <Link href="/faq">
-                <div className="bg-background rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-border">
+                <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 cursor-pointer hover:scale-105 border border-white/20">
                   <div className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mb-6">
                     <HelpCircle className="w-8 h-8 text-orange-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Perguntas Frequentes</h3>
-                  <p className="text-muted-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Perguntas Frequentes</h3>
+                  <p className="text-gray-600 mb-4">
                     Tire suas dúvidas sobre nossos serviços e processos
                   </p>
                   <div className="flex items-center text-primary font-medium">
