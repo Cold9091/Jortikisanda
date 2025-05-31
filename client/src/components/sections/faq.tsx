@@ -144,7 +144,7 @@ export default function FAQ() {
                       <p className="text-gray-600 text-sm mb-2 leading-relaxed">
                         {step.description}
                       </p>
-                      <span className="inline-flex items-center px-2 py-1 bg-gold/10 text-gold text-xs font-medium rounded-full">
+                      <span className="inline-flex items-center px-2 py-1 bg-gold/10 text-xs font-medium rounded-full text-[#dc6014]">
                         {step.time}
                       </span>
                     </div>
