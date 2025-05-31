@@ -183,7 +183,7 @@ export default function FAQPage() {
                   <div key={categoryIndex} className="rounded-xl shadow-lg p-8 border border-border bg-[#fafafa]">
                     <div className="flex items-center mb-8">
                       <span className="text-3xl mr-4">{category.icon}</span>
-                      <h3 className="text-2xl font-bold text-foreground">{category.title}</h3>
+                      <h3 className="text-2xl font-bold text-[#153a98]">{category.title}</h3>
                     </div>
                     
                     <div className="space-y-6">
