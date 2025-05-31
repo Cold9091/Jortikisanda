@@ -122,7 +122,12 @@ Mensagem: ${formData.message}`;
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="glass-effect border-0 shadow-2xl animate-scale-in bg-gradient-to-br from-primary via-blue-800 to-blue-900">
+          <Card 
+            className="border-0 shadow-2xl animate-scale-in"
+            style={{
+              background: 'linear-gradient(to bottom right, hsl(213, 100%, 20%), hsl(217, 91%, 33%), hsl(220, 91%, 27%))'
+            }}
+          >
             <CardContent className="p-10">
               <h3 className="text-3xl font-semibold font-montserrat text-white mb-8">
                 Envie uma Mensagem
