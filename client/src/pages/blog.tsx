@@ -253,7 +253,7 @@ export default function Blog() {
                         </span>
                       </div>
                       <Link href={`/blog/${post.slug}`}>
-                        <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full bg-[#1e3fa4]">
                           <BookOpen className="w-4 h-4 mr-2" />
                           Ler Mais
                         </Button>
