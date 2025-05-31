@@ -144,7 +144,7 @@ export default function Blog() {
                   className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                     selectedCategory === category
                       ? "bg-primary text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-primary/10"
+                      : "bg-white/95 backdrop-blur-sm text-gray-700 hover:bg-primary/20 border border-white/20"
                   }`}
                 >
                   {category}
@@ -159,7 +159,7 @@ export default function Blog() {
           <section className="py-20 bg-gradient-to-br from-primary/60 via-blue-800/60 to-blue-900/60">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Artigo em Destaque</h2>
+                <h2 className="text-3xl font-bold text-white mb-4">Artigo em Destaque</h2>
               </div>
               
               <div className="bg-white rounded-xl shadow-lg overflow-hidden">

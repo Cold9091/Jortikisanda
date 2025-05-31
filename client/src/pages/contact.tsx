@@ -131,17 +131,17 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="text-center p-6 bg-white/95 backdrop-blur-sm rounded-xl hover:shadow-lg transition-all duration-300 border border-white/20">
+                <div key={index} className="text-center p-8 bg-white/95 backdrop-blur-sm rounded-xl hover:shadow-lg transition-all duration-300 border border-white/20 min-h-[280px] flex flex-col justify-center">
                   <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <info.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">{info.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">{info.title}</h3>
                   <div className="space-y-1 mb-3">
                     {info.items.map((item, itemIndex) => (
-                      <p key={itemIndex} className="text-foreground font-medium">{item}</p>
+                      <p key={itemIndex} className="text-gray-700 font-medium">{item}</p>
                     ))}
                   </div>
-                  <p className="text-muted-foreground text-sm">{info.description}</p>
+                  <p className="text-gray-600 text-sm">{info.description}</p>
                 </div>
               ))}
             </div>

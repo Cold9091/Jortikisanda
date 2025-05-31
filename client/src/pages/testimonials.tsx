@@ -125,12 +125,12 @@ export default function TestimonialsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div key={index} className="text-center p-8 bg-white/95 backdrop-blur-sm rounded-xl border border-white/20 min-h-[200px] flex flex-col justify-center">
+                  <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     <stat.icon className={`w-10 h-10 ${stat.color}`} />
                   </div>
                   <div className={`text-4xl font-bold mb-2 ${stat.color}`}>{stat.number}</div>
-                  <div className="text-gray-600 text-lg">{stat.label}</div>
+                  <div className="text-gray-700 text-lg">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -140,7 +140,7 @@ export default function TestimonialsPage() {
         <Testimonials />
 
         {/* Detailed Testimonials */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gradient-to-br from-primary/70 via-blue-800/70 to-blue-900/70">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
