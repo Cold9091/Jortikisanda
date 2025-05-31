@@ -234,7 +234,7 @@ export default function PlansPage() {
                 </p>
               </div>
 
-              <div className="bg-background rounded-xl p-6 shadow-sm border border-border">
+              <div className="rounded-xl p-6 shadow-sm border border-border bg-[#ffffff]">
                 <h3 className="text-lg font-semibold mb-3 text-[#1d40ad]">
                   Os preços incluem impostos?
                 </h3>
