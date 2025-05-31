@@ -122,14 +122,14 @@ Mensagem: ${formData.message}`;
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="glass-effect border-0 shadow-2xl animate-scale-in">
+          <Card className="glass-effect border-0 shadow-2xl animate-scale-in bg-gradient-to-br from-primary via-blue-800 to-blue-900">
             <CardContent className="p-10">
-              <h3 className="text-3xl font-semibold font-montserrat text-primary mb-8">
+              <h3 className="text-3xl font-semibold font-montserrat text-white mb-8">
                 Envie uma Mensagem
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <Label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                     Nome Completo *
                   </Label>
                   <Input
@@ -142,7 +142,7 @@ Mensagem: ${formData.message}`;
                   />
                 </div>
                 <div>
-                  <Label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <Label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                     Email *
                   </Label>
                   <Input
@@ -155,7 +155,7 @@ Mensagem: ${formData.message}`;
                   />
                 </div>
                 <div>
-                  <Label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <Label htmlFor="phone" className="block text-sm font-medium text-white mb-2">
                     Telefone
                   </Label>
                   <Input
@@ -167,7 +167,7 @@ Mensagem: ${formData.message}`;
                   />
                 </div>
                 <div>
-                  <Label className="block text-sm font-medium text-gray-700 mb-2">
+                  <Label className="block text-sm font-medium text-white mb-2">
                     Serviço de Interesse
                   </Label>
                   <Select
@@ -189,7 +189,7 @@ Mensagem: ${formData.message}`;
                   </Select>
                 </div>
                 <div>
-                  <Label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <Label htmlFor="message" className="block text-sm font-medium text-white mb-2">
                     Mensagem *
                   </Label>
                   <Textarea
@@ -203,7 +203,7 @@ Mensagem: ${formData.message}`;
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-gold text-primary hover:bg-yellow-400 py-4 text-lg font-semibold rounded-xl hover:scale-105 transition-all duration-300"
+                  className="w-full bg-[#dc6014] text-white hover:bg-[#dc6014]/80 py-4 text-lg font-semibold rounded-xl hover:scale-105 transition-all duration-300"
                   disabled={contactMutation.isPending}
                 >
                   {contactMutation.isPending ? "Enviando..." : "Enviar Mensagem"}
