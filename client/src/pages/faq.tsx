@@ -182,7 +182,6 @@ export default function FAQPage() {
                 {filteredCategories.map((category, categoryIndex) => (
                   <div key={categoryIndex} className="rounded-xl shadow-lg p-8 border border-border bg-[#fafafa]">
                     <div className="flex items-center mb-8">
-                      <span className="text-3xl mr-4">{category.icon}</span>
                       <h3 className="text-2xl font-bold text-[#153a98]">{category.title}</h3>
                     </div>
                     
