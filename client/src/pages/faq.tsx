@@ -189,7 +189,7 @@ export default function FAQPage() {
                     <div className="space-y-6">
                       {category.questions.map((faq, faqIndex) => (
                         <div key={faqIndex} className="border-l-4 border-primary pl-6">
-                          <h4 className="text-lg font-semibold text-foreground mb-3 flex items-start">
+                          <h4 className="text-lg font-semibold mb-3 flex items-start text-[#143a97]">
                             <HelpCircle className="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" />
                             {faq.question}
                           </h4>
