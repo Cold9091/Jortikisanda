@@ -114,13 +114,6 @@ export default function Hero() {
               
               <div className="flex flex-col sm:flex-row gap-6 pt-4">
                 <Button
-                  onClick={handleEmail}
-                  className="group bg-orange-accent text-white px-8 py-4 rounded-2xl font-semibold hover:bg-orange-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                >
-                  <File className="mr-3 group-hover:rotate-12 transition-transform" size={20} />
-                  Solicitar Orçamento
-                </Button>
-                <Button
                   onClick={handleWhatsApp}
                   className="group bg-green-500 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-green-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 >
