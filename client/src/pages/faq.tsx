@@ -234,7 +234,7 @@ export default function FAQPage() {
                   <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${method.color.replace('text-', 'bg-').replace('600', '100').replace('500', '100')}`}>
                     <method.icon className={`w-8 h-8 ${method.color}`} />
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{method.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-[#1d40ad]">{method.title}</h3>
                   <p className="text-muted-foreground mb-4">{method.description}</p>
                   <p className={`font-medium ${method.color}`}>{method.action}</p>
                 </div>
