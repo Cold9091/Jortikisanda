@@ -17,7 +17,7 @@ export default function TestimonialsPage() {
       icon: TrendingUp,
       number: "98%",
       label: "Taxa de Satisfação",
-      color: "text-green-600"
+      color: "text-primary"
     },
     {
       icon: Star,
@@ -127,7 +127,7 @@ export default function TestimonialsPage() {
               {stats.map((stat, index) => (
                 <div key={index} className="text-center p-8 bg-white/95 backdrop-blur-sm rounded-xl border border-white/20 min-h-[200px] flex flex-col justify-center">
                   <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className={`w-10 h-10 ${stat.color}`} />
+                    <stat.icon className="w-10 h-10 text-primary" />
                   </div>
                   <div className="text-4xl font-bold mb-2 text-[#002e66]">{stat.number}</div>
                   <div className="text-gray-700 text-lg">{stat.label}</div>

@@ -35,10 +35,10 @@ export default function News() {
   ];
 
   const categories = [
-    { name: "Fiscalidade", count: 12, icon: FileText, color: "text-blue-600" },
-    { name: "Legislação", count: 8, icon: Globe, color: "text-green-600" },
-    { name: "Tecnologia", count: 6, icon: TrendingUp, color: "text-purple-600" },
-    { name: "Mercado", count: 10, icon: Newspaper, color: "text-gold" }
+    { name: "Fiscalidade", count: 12, icon: FileText, color: "text-primary" },
+    { name: "Legislação", count: 8, icon: Globe, color: "text-primary" },
+    { name: "Tecnologia", count: 6, icon: TrendingUp, color: "text-primary" },
+    { name: "Mercado", count: 10, icon: Newspaper, color: "text-primary" }
   ];
 
   return (
