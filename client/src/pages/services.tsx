@@ -152,8 +152,8 @@ export default function ServicesPage() {
                       <service.icon className="w-8 h-8" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-foreground mb-2">{service.title}</h3>
-                      <p className="text-muted-foreground">{service.description}</p>
+                      <h3 className="text-2xl font-bold text-gray-800 mb-2">{service.title}</h3>
+                      <p className="text-gray-600">{service.description}</p>
                     </div>
                   </div>
                   
@@ -161,7 +161,7 @@ export default function ServicesPage() {
                     {service.details.map((detail, detailIndex) => (
                       <div key={detailIndex} className="flex items-center">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                        <span className="text-foreground">{detail}</span>
+                        <span className="text-gray-700">{detail}</span>
                       </div>
                     ))}
                   </div>
@@ -172,48 +172,48 @@ export default function ServicesPage() {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-gradient-to-br from-primary/70 via-blue-800/70 to-blue-900/70">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Como Trabalhamos
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-blue-100">
                 Nosso processo simplificado para atender sua empresa
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="text-center">
+              <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                 <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Análise Inicial</h3>
-                <p className="text-muted-foreground">Avaliamos suas necessidades e situação atual</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Análise Inicial</h3>
+                <p className="text-gray-600">Avaliamos suas necessidades e situação atual</p>
               </div>
 
-              <div className="text-center">
+              <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                 <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-gold">2</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Proposta Personalizada</h3>
-                <p className="text-muted-foreground">Elaboramos uma solução sob medida para você</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Proposta Personalizada</h3>
+                <p className="text-gray-600">Elaboramos uma solução sob medida para você</p>
               </div>
 
-              <div className="text-center">
+              <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                 <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-green-500">3</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Implementação</h3>
-                <p className="text-muted-foreground">Colocamos os serviços em funcionamento</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Implementação</h3>
+                <p className="text-gray-600">Colocamos os serviços em funcionamento</p>
               </div>
 
-              <div className="text-center">
+              <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 text-center border border-white/20">
                 <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-blue-500">4</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Acompanhamento</h3>
-                <p className="text-muted-foreground">Monitoramos e otimizamos continuamente</p>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Acompanhamento</h3>
+                <p className="text-gray-600">Monitoramos e otimizamos continuamente</p>
               </div>
             </div>
           </div>
