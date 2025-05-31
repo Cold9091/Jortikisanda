@@ -6,18 +6,18 @@ export default function About() {
   
   const teamImages = [
     {
-      src: "@assets/1748686009703.webp",
-      alt: "Equipe da JortikiSanda - Foto ilustrativa",
+      src: "/assets/team1.webp",
+      alt: "Equipe da JortikiSanda - Profissionais experientes",
       title: "Nossa Equipe Principal"
     },
     {
-      src: "@assets/1748686010963.webp", 
-      alt: "Profissionais da JortikiSanda",
+      src: "/assets/team2.webp", 
+      alt: "Profissionais da JortikiSanda em reunião",
       title: "Especialistas Certificados"
     },
     {
-      src: "@assets/1748686021141.webp",
-      alt: "Ambiente de trabalho profissional",
+      src: "/assets/team3.webp",
+      alt: "Ambiente de trabalho profissional moderno",
       title: "Escritório Moderno"
     }
   ];
