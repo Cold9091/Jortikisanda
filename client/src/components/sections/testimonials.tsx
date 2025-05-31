@@ -96,7 +96,8 @@ export default function Testimonials() {
                 const element = document.getElementById("contato");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
-              className="bg-gold text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105"
+              className="text-white px-8 py-4 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105"
+              style={{backgroundColor: '#dc6014'}}
             >
               Começar Agora
             </button>
