@@ -82,7 +82,7 @@ export default function FAQ() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center px-4 py-2 rounded-full font-medium mb-6 text-[#dc6014]" style={{backgroundColor: '#dc6014', opacity: 0.1}}>
+          <div className="inline-flex items-center px-4 py-2 rounded-full font-medium mb-6 text-[#ffffff] bg-[#141edc73]" style={{backgroundColor: '#dc6014', opacity: 0.1}}>
             <HelpCircle className="mr-2" size={16} />
             Perguntas Frequentes
           </div>
@@ -141,13 +141,13 @@ export default function FAQ() {
                       <step.icon className="text-primary" size={20} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold mb-1 transition-colors text-[#dc6014]">
+                      <h4 className="font-semibold mb-1 transition-colors text-[#002e66]">
                         {step.title}
                       </h4>
                       <p className="text-gray-600 text-sm mb-2 leading-relaxed">
                         {step.description}
                       </p>
-                      <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-full text-[#dc6014]" style={{backgroundColor: 'rgba(220, 96, 20, 0.1)'}}>
+                      <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-full text-[#002e66]" style={{backgroundColor: 'rgba(220, 96, 20, 0.1)'}}>
                         {step.time}
                       </span>
                     </div>

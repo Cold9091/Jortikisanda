@@ -236,7 +236,7 @@ export default function FAQPage() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2 text-[#1d40ad]">{method.title}</h3>
                   <p className="text-muted-foreground mb-4">{method.description}</p>
-                  <p className={`font-medium ${method.color}`}>{method.action}</p>
+                  <p className="font-medium text-[#2563eb]">{method.action}</p>
                 </div>
               ))}
             </div>
