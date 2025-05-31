@@ -205,7 +205,7 @@ export default function ContactPage() {
               </div>
               
               <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/20">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                <h3 className="text-2xl font-bold mb-6 text-[#0066ff]">
                   Perguntas Frequentes
                 </h3>
                 <div className="space-y-6">
