@@ -77,12 +77,12 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-24 bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-br from-gold/10 to-transparent rounded-full filter blur-3xl"></div>
+      <div className="absolute top-10 left-10 w-72 h-72 rounded-full filter blur-3xl" style={{background: 'radial-gradient(circle, rgba(220, 96, 20, 0.1) 0%, transparent 100%)'}}></div>
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-tr from-primary/10 to-transparent rounded-full filter blur-3xl"></div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20 animate-slide-up">
-          <div className="inline-flex items-center px-4 py-2 bg-gold/10 rounded-full font-medium mb-6 text-[#dc6014]">
+          <div className="inline-flex items-center px-4 py-2 rounded-full font-medium mb-6 text-[#dc6014]" style={{backgroundColor: '#dc6014', opacity: 0.1}}>
             <HelpCircle className="mr-2" size={16} />
             Perguntas Frequentes
           </div>
@@ -101,15 +101,18 @@ export default function FAQ() {
               <div key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 animate-scale-in" style={{animationDelay: `${index * 0.05}s`}}>
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gold/5 rounded-2xl transition-colors duration-300"
+                  className="w-full px-8 py-6 text-left flex items-center justify-between rounded-2xl transition-colors duration-300"
+                  style={{'&:hover': {backgroundColor: '#dc6014', opacity: 0.05}}}
+                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(220, 96, 20, 0.05)'}
+                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                 >
                   <h3 className="text-lg font-semibold text-primary pr-4">
                     {faq.question}
                   </h3>
                   {openIndex === index ? (
-                    <ChevronUp className="text-gold flex-shrink-0" size={24} />
+                    <ChevronUp className="flex-shrink-0" style={{color: '#dc6014'}} size={24} />
                   ) : (
-                    <ChevronDown className="text-gold flex-shrink-0" size={24} />
+                    <ChevronDown className="flex-shrink-0" style={{color: '#dc6014'}} size={24} />
                   )}
                 </button>
                 {openIndex === index && (
@@ -138,13 +141,13 @@ export default function FAQ() {
                       <step.icon className="text-primary" size={20} />
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-semibold mb-1 group-hover:text-gold transition-colors text-[#dc6014]">
+                      <h4 className="font-semibold mb-1 transition-colors text-[#dc6014]">
                         {step.title}
                       </h4>
                       <p className="text-gray-600 text-sm mb-2 leading-relaxed">
                         {step.description}
                       </p>
-                      <span className="inline-flex items-center px-2 py-1 bg-gold/10 text-xs font-medium rounded-full text-[#dc6014]">
+                      <span className="inline-flex items-center px-2 py-1 text-xs font-medium rounded-full text-[#dc6014]" style={{backgroundColor: 'rgba(220, 96, 20, 0.1)'}}>
                         {step.time}
                       </span>
                     </div>
@@ -155,7 +158,7 @@ export default function FAQ() {
 
             {/* Quick Contact */}
             <div className="bg-gradient-to-br from-primary to-blue-700 rounded-3xl p-8 text-white text-center">
-              <HelpCircle className="mx-auto mb-4 text-gold" size={48} />
+              <HelpCircle className="mx-auto mb-4" style={{color: '#dc6014'}} size={48} />
               <h3 className="text-xl font-bold font-montserrat mb-4">
                 Não Encontrou sua Resposta?
               </h3>
@@ -167,7 +170,8 @@ export default function FAQ() {
                   const element = document.getElementById("contato");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="px-6 py-3 rounded-xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105 bg-[#dc6014] text-[#ffffff]"
+                className="px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105 text-white"
+                style={{backgroundColor: '#dc6014'}}
               >
                 Fale Conosco
               </button>
