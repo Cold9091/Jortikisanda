@@ -185,22 +185,19 @@ export default function Services() {
             {services.map((service, index) => (
               <Card key={index} className="group hover-lift bg-white border-0 shadow-lg hover:shadow-2xl animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                 <CardContent className="p-8 relative overflow-hidden">
-                  {/* Background gradient on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-gold/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  
                   <div className="relative z-10">
                     <div className="bg-gradient-to-br from-primary/20 to-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                       <div className="text-primary">
                         <IconComponent iconName={service.icon} />
                       </div>
                     </div>
-                    <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4 group-hover:text-gold transition-colors">
+                    <h3 className="text-2xl font-semibold font-montserrat text-primary mb-4">
                       {service.title}
                     </h3>
                     <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                     <ul className="text-gray-600 space-y-3">
                       {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center group-hover:text-gray-700 transition-colors">
+                        <li key={featureIndex} className="flex items-center">
                           <div className="w-2 h-2 bg-gold rounded-full mr-3 flex-shrink-0 group-hover:scale-125 transition-transform"></div>
                           <span className="text-sm">{feature}</span>
                         </li>
