@@ -139,7 +139,7 @@ export default function BlogPost() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-primary via-blue-800 to-blue-900">
       <Header />
       <main className="pt-20">
         {/* Article Header */}
@@ -183,46 +183,48 @@ export default function BlogPost() {
         {/* Article Content */}
         <section className="py-12">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="prose prose-lg max-w-none">
-              <div className="h-64 overflow-hidden rounded-xl mb-8">
-                <img 
-                  src={currentPost.image} 
-                  alt={currentPost.title}
-                  className="w-full h-full object-cover"
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
+              <div className="prose prose-lg max-w-none">
+                <div className="h-64 overflow-hidden rounded-xl mb-8">
+                  <img 
+                    src={currentPost.image} 
+                    alt={currentPost.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                <div 
+                  className="text-gray-700 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: currentPost.content }}
                 />
               </div>
               
-              <div 
-                className="text-gray-700 leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: currentPost.content }}
-              />
-            </div>
-            
-            {/* Tags */}
-            <div className="mt-12 pt-8 border-t">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Tags:</h3>
-              <div className="flex flex-wrap gap-2">
-                {currentPost.tags.map((tag, index) => (
-                  <span key={index} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm flex items-center">
-                    <Tag className="w-3 h-3 mr-1" />
-                    {tag}
-                  </span>
-                ))}
+              {/* Tags */}
+              <div className="mt-12 pt-8 border-t">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Tags:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {currentPost.tags.map((tag, index) => (
+                    <span key={index} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm flex items-center">
+                      <Tag className="w-3 h-3 mr-1" />
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Related Posts */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            <h2 className="text-3xl font-bold text-white mb-12 text-center">
               Artigos Relacionados
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {relatedPosts.map((post, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                <div key={index} className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
                   <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">
                     {post.category}
                   </span>
