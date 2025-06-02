@@ -1,5 +1,8 @@
 import { Target, Eye, Heart, Star, Users, Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import officeIllustration from "@assets/Imagem WhatsApp 2025-06-02 às 14.27.43_db70ac7a.jpg";
+import officeSpace1 from "@assets/Imagem WhatsApp 2025-06-02 às 14.27.44_4c40f8e8.jpg";
+import officeSpace2 from "@assets/Imagem WhatsApp 2025-06-02 às 14.27.43_8dfce741.jpg";
 
 export default function About() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,14 +14,19 @@ export default function About() {
       title: "Nossa Equipe Principal"
     },
     {
-      src: "/assets/team2.webp", 
-      alt: "Profissionais da JortikiSanda em reunião",
-      title: "Especialistas Certificados"
+      src: officeIllustration,
+      alt: "Profissionais da JortikiSanda trabalhando no escritório",
+      title: "Nosso Ambiente de Trabalho"
     },
     {
-      src: "/assets/team3.webp",
-      alt: "Ambiente de trabalho profissional moderno",
-      title: "Escritório Moderno"
+      src: officeSpace1,
+      alt: "Escritório organizado com documentos fiscais",
+      title: "Organização e Eficiência"
+    },
+    {
+      src: officeSpace2,
+      alt: "Espaço de trabalho moderno e profissional",
+      title: "Tecnologia e Modernidade"
     }
   ];
 
