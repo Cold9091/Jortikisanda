@@ -57,7 +57,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "29 de Janeiro, 2024",
       readTime: "10 min",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://www.contabilizario.com.br/wp-content/uploads/2024/06/A-importancia-da-contabilidade-para-a-saude-financeira-das-empresas-1-scaled.jpg",
       featured: false
     },
     {
