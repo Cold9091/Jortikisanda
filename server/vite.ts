@@ -23,7 +23,7 @@ export async function setupVite(app: Express, server: Server) {
   const serverOptions = {
     middlewareMode: true,
     hmr: { server },
-    allowedHosts: true,
+    allowedHosts: ['localhost', '.vercel.app'] as string[],
   };
 
   const vite = await createViteServer({
@@ -68,18 +68,60 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(import.meta.dirname, "public");
+  // Na Vercel, os ficheiros estáticos estarão na pasta dist
+  const distPath = process.env.NODE_ENV === 'production'
+    ? path.resolve(import.meta.dirname, "..", "dist", "client")
+    : path.resolve(import.meta.dirname, "public");
 
-  if (!fs.existsSync(distPath)) {
-    throw new Error(
-      `Could not find the build directory: ${distPath}, make sure to build the client first`,
-    );
+  // Verificar se o diretório existe
+  try {
+    if (!fs.existsSync(distPath)) {
+      log(`Build directory not found at ${distPath}. Trying alternative paths...`);
+      
+      // Tentar caminhos alternativos
+      const altPaths = [
+        path.resolve(import.meta.dirname, "..", "dist"),
+        path.resolve(import.meta.dirname, "..", "client"),
+        path.resolve(import.meta.dirname, "public")
+      ];
+      
+      for (const altPath of altPaths) {
+        if (fs.existsSync(altPath)) {
+          log(`Found alternative build directory at ${altPath}`);
+          app.use(express.static(altPath));
+          
+          // fall through to index.html if the file doesn't exist
+          app.use("*", (_req, res) => {
+            if (fs.existsSync(path.resolve(altPath, "index.html"))) {
+              res.sendFile(path.resolve(altPath, "index.html"));
+            } else {
+              res.status(404).send("Build files not found");
+            }
+          });
+          
+          return;
+        }
+      }
+      
+      log("No build directory found in any location");
+    } else {
+      log(`Using build directory at ${distPath}`);
+      app.use(express.static(distPath));
+      
+      // fall through to index.html if the file doesn't exist
+      app.use("*", (_req, res) => {
+        if (fs.existsSync(path.resolve(distPath, "index.html"))) {
+          res.sendFile(path.resolve(distPath, "index.html"));
+        } else {
+          res.status(404).send("index.html not found");
+        }
+      });
+    }
+  } catch (error) {
+    log(`Error in serveStatic: ${error}`);
+    // Não lançar erro, apenas registar e continuar
+    app.use("*", (_req, res) => {
+      res.status(500).send("Server configuration error");
+    });
   }
-
-  app.use(express.static(distPath));
-
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
-  });
 }
