@@ -22,21 +22,27 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/jortikisandalda.js.5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gold hover:text-gold/80 text-xl transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={24} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/jortiki-sanda-778406147/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gold hover:text-gold/80 text-xl transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/jortikisanda_contabilidade/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gold hover:text-gold/80 text-xl transition-colors"
                 aria-label="Instagram"
               >
@@ -96,7 +102,7 @@ export default function Footer() {
             <ul className="space-y-2 text-blue-100">
               <li className="flex items-center">
                 <Phone size={16} className="mr-2" />
-                +244 939 103 175
+                +244 939 103 175 & +244 932 036 524
               </li>
               <li className="flex items-center">
                 <Mail size={16} className="mr-2" />
@@ -104,7 +110,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <MapPin size={16} className="mr-2" />
-                Luanda, Angola
+                Luanda, Coqueiros, Angola
               </li>
             </ul>
           </div>

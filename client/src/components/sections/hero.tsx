@@ -75,7 +75,7 @@ export default function Hero() {
       company: "JORTIKISANDA ANGOLA",
       title: "Serviços Especializados",
       description: "Oferecemos uma gama completa de serviços contabilísticos, auditoria, consultoria fiscal e análise financeira para empresas que buscam excelência e crescimento sustentável no mercado angolano.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
+      image: "https://www.contabilizario.com.br/wp-content/uploads/2024/06/A-importancia-da-contabilidade-para-a-saude-financeira-das-empresas-1-scaled.jpg",
       icon: FileText,
       link: "#servicos"
     },
