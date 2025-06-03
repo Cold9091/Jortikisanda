@@ -128,7 +128,7 @@ Mensagem: ${formData.message}`;
               background: 'linear-gradient(to bottom right, hsl(213, 100%, 20%), hsl(217, 91%, 33%), hsl(220, 91%, 27%))'
             }}
           >
-            <CardContent className="p-10">
+            <CardContent className="p-6 sm:p-8 md:p-10">
               <h3 className="text-3xl font-semibold font-montserrat text-white mb-8">
                 Envie uma Mensagem
               </h3>
