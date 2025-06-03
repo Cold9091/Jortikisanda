@@ -57,7 +57,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "29 de Janeiro, 2024",
       readTime: "10 min",
-      image: "https://www.contabilizario.com.br/wp-content/uploads/2024/06/A-importancia-da-contabilidade-para-a-saude-financeira-das-empresas-1-scaled.jpg",
+      image: "https://welcometoangola.co.ao/wp-content/uploads/2021/01/vista-marginal-luanda.jpg",
       featured: false
     },
     {
@@ -79,7 +79,7 @@ export default function Blog() {
       author: "Equipe JortikiSanda",
       date: "12 de Fevereiro, 2024",
       readTime: "15 min",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://welcometoangola.co.ao/wp-content/uploads/2021/01/vista-marginal-luanda.jpg",
       featured: false
     },
     {
@@ -276,27 +276,6 @@ export default function Blog() {
           </div>
         </section>
 
-        {/* Newsletter Section */}
-        <section className="py-20 bg-gradient-to-r from-primary to-blue-700">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Receba Nossas Atualizações
-            </h2>
-            <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-              Inscreva-se em nossa newsletter e receba os melhores conteúdos sobre contabilidade e gestão empresarial
-            </p>
-            <div className="max-w-md mx-auto flex gap-4">
-              <input
-                type="email"
-                placeholder="Seu e-mail"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <Button className="bg-white text-primary hover:bg-gray-100 px-6 py-3">
-                Inscrever
-              </Button>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
