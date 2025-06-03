@@ -220,7 +220,7 @@ export default function About() {
               <div className="bg-gradient-to-br from-blue-100 to-blue-200 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <Users className="text-primary" size={32} />
               </div>
-              <div className="text-3xl font-bold text-white mb-2">50+</div>
+              <div className="text-3xl font-bold text-white mb-2">10+</div>
               <div className="text-blue-100 font-medium">Profissionais Certificados</div>
             </div>
             

@@ -4,27 +4,27 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: "Maria José",
-      position: "CEO",
-      company: "TechAngola Lda",
+      name: "Jorge Abreu",
+      position: "Comercial",
+      company: "",
       rating: 5,
       content: "A JortikiSanda transformou nossa gestão contábil. Profissionalismo e eficiência excepcionais.",
       initials: "MJ"
     },
     {
       id: 2,
-      name: "António Carlos",
+      name: "Frederico",
       position: "Diretor",
-      company: "ComercialPlus",
+      company: "",
       rating: 5,
       content: "Excelente atendimento e soluções personalizadas. Recomendo a todos os empresários.",
       initials: "AC"
     },
     {
       id: 3,
-      name: "Ana Fernandes",
-      position: "CFO",
-      company: "InvestGroup Angola",
+      name: "Augusto Sandango",
+      position: "CEO",
+      company: "Construção Sandango",
       rating: 5,
       content: "Profissionais competentes e sempre disponíveis. Nossa empresa cresceu com segurança jurídica.",
       initials: "AF"

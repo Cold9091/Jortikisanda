@@ -110,7 +110,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <MapPin size={16} className="mr-2" />
-                Luanda, Coqueiros, Angola
+                Imgobotas, Largo Atletico dos Coqueiros, Luanda, Angola
               </li>
             </ul>
           </div>

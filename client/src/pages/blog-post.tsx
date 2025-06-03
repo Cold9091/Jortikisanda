@@ -71,7 +71,7 @@ export default function BlogPost() {
       author: "Equipe JortikiSanda",
       date: "22 de Janeiro, 2024",
       readTime: "12 min",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      image: "https://welcometoangola.co.ao/wp-content/uploads/2021/01/vista-marginal-luanda.jpg",
       content: `
         <p>A gestão financeira é um dos pilares fundamentais para o sucesso de qualquer empresa, especialmente para pequenos negócios que precisam otimizar cada recurso disponível. Neste guia completo, vamos abordar as melhores práticas para manter a saúde financeira da sua empresa.</p>
 
