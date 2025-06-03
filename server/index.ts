@@ -57,7 +57,7 @@ app.use((req, res, next) => {
   }
 
   // Use a porta fornecida pela Vercel ou 5000 como fallback
-  const port = process.env.PORT || 5000;
+  const port = process.env.PORT || 3000;
   server.listen({
     port: Number(port),
     host: "0.0.0.0",

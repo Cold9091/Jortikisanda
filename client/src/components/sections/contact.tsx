@@ -233,7 +233,7 @@ Mensagem: ${formData.message}`;
                     <div>
                       <h4 className="font-semibold text-primary">Endereço</h4>
                       <p className="text-gray-600">
-                        Rua Principal, Bairro Comercial<br />
+                      Imgobotas, Largo Atletico dos Coqueiros<br />
                         Luanda, Angola
                       </p>
                     </div>
@@ -247,6 +247,7 @@ Mensagem: ${formData.message}`;
                       <p className="text-gray-600">
                         +244 939 103 175<br />
                         +244 932 036 524
+                        +244 222 721 415
                       </p>
                     </div>
                   </div>

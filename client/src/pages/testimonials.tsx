@@ -29,8 +29,8 @@ export default function TestimonialsPage() {
 
   const detailedTestimonials = [
     {
-      name: "Maria Santos",
-      company: "Santos & Associados Lda",
+      name: "Adão",
+      company: "CEO- Egimar",
       sector: "Consultoria Jurídica",
       image: "MS",
       rating: 5,
@@ -38,17 +38,17 @@ export default function TestimonialsPage() {
       results: "Redução de 80% em multas fiscais"
     },
     {
-      name: "João Pereira",
-      company: "Construções Pereira",
-      sector: "Construção Civil",
+      name: "Joana Aurelio",
+      company: "CEO-Sunceant Mount",
+      sector: "",
       image: "JP",
       rating: 5,
       testimonial: "Trabalho com a JortikiSanda há 3 anos e posso dizer que foi a melhor decisão que tomei. Eles cuidam de toda parte fiscal e contábil, deixando-me livre para focar no crescimento da empresa.",
       results: "Crescimento de 150% no faturamento"
     },
     {
-      name: "Ana Ferreira",
-      company: "Ferreira Importações",
+      name: "Gilson Ribeiro",
+      company: "CEO",
       sector: "Comércio",
       image: "AF",
       rating: 5,
@@ -56,27 +56,27 @@ export default function TestimonialsPage() {
       results: "100% de conformidade fiscal"
     },
     {
-      name: "Carlos Mendes",
-      company: "TechSolutions Angola",
-      sector: "Tecnologia",
+      name: "Milton Bamba",
+      company: "CEO-Milton Bamba Lda",
+      sector: "",
       image: "CM",
       rating: 5,
       testimonial: "Como empresa de tecnologia, precisávamos de um parceiro que entendesse nossas necessidades específicas. A JortikiSanda superou nossas expectativas em todos os aspectos.",
       results: "Otimização de 30% nos custos fiscais"
     },
     {
-      name: "Luisa Costa",
-      company: "Costa Restaurantes",
-      sector: "Alimentação",
+      name: "Yano",
+      company: "Da Organização Tchachi",
+      sector: "",
       image: "LC",
       rating: 5,
       testimonial: "Gerencio uma rede de restaurantes e a complexidade fiscal era um pesadelo. Com a JortikiSanda, tudo ficou organizado e simples. Recomendo sem hesitação.",
       results: "Gestão integrada de 5 estabelecimentos"
     },
     {
-      name: "Roberto Silva",
-      company: "Silva Transportes",
-      sector: "Logística",
+      name: "João Pedro",
+      company: "Casa Dedita",
+      sector: "",
       image: "RS",
       rating: 5,
       testimonial: "A expertise da equipe em legislação angolana é impressionante. Eles resolveram questões complexas que tínhamos há anos. Agora nossa empresa opera com total tranquilidade.",

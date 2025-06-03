@@ -1,6 +1,7 @@
 import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from 'url';
 import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
 import viteConfig from "../vite.config";
@@ -20,6 +21,9 @@ export function log(message: string, source = "express") {
 }
 
 export async function setupVite(app: Express, server: Server) {
+  // ESM-friendly __dirname
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
   const serverOptions = {
     middlewareMode: true,
     hmr: { server },
@@ -46,7 +50,7 @@ export async function setupVite(app: Express, server: Server) {
 
     try {
       const clientTemplate = path.resolve(
-        import.meta.dirname,
+        __dirname,
         "..",
         "client",
         "index.html",
@@ -70,8 +74,8 @@ export async function setupVite(app: Express, server: Server) {
 export function serveStatic(app: Express) {
   // Na Vercel, os ficheiros estáticos estarão na pasta dist
   const distPath = process.env.NODE_ENV === 'production'
-    ? path.resolve(import.meta.dirname, "..", "dist", "client")
-    : path.resolve(import.meta.dirname, "public");
+    ? path.resolve(__dirname, "..", "dist", "client")
+    : path.resolve(__dirname, "public");
 
   // Verificar se o diretório existe
   try {
@@ -80,9 +84,9 @@ export function serveStatic(app: Express) {
       
       // Tentar caminhos alternativos
       const altPaths = [
-        path.resolve(import.meta.dirname, "..", "dist"),
-        path.resolve(import.meta.dirname, "..", "client"),
-        path.resolve(import.meta.dirname, "public")
+        path.resolve(__dirname, "..", "dist"),
+        path.resolve(__dirname, "..", "client"),
+        path.resolve(__dirname, "public")
       ];
       
       for (const altPath of altPaths) {
