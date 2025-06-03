@@ -195,7 +195,7 @@ Mensagem: ${formData.message}`;
                 </div>
                 <div>
                   <Label htmlFor="message" className="block text-sm font-medium text-white mb-2">
-                    Mensagem *
+                    Mensagem
                   </Label>
                   <Textarea
                     id="message"
@@ -320,14 +320,16 @@ Mensagem: ${formData.message}`;
                 <h3 className="text-2xl font-semibold font-montserrat text-primary mb-6">
                   Localização
                 </h3>
-                <div className="bg-gradient-to-br from-gray-100 to-blue-50 h-48 rounded-2xl flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                  <div className="text-center text-gray-500">
-                    <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                      <MapPin size={48} className="mx-auto mb-2 text-primary" />
-                      <p className="font-semibold text-primary">Luanda, Angola</p>
-                      <p className="text-sm">Rua Principal, Bairro Comercial</p>
-                    </div>
-                  </div>
+                <div className="h-96 rounded-2xl overflow-hidden">
+                  <iframe
+                    src="https://maps.google.com/maps?q=-8.812885890108406,13.226698730243749&hl=pt&z=16&amp;output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border:0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </CardContent>
             </Card>
