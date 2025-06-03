@@ -19,7 +19,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: "Telefones",
-      items: ["+244 939 103 175", "+244 932 036 524"],
+      items: ["+244 939 103 175", "+244 932 036 524", "+244 222 721 415"],
       description: "Atendimento de Segunda a Sexta das 8h às 17h"
     },
     {
@@ -31,7 +31,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Localização",
-      items: ["Luanda, Angola"],
+      items: ["Imgobotas, Largo Atletico dos Coqueiros, Luanda, Angola"],
       description: "Atendimento presencial mediante agendamento"
     },
     {
