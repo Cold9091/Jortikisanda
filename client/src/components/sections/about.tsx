@@ -194,8 +194,8 @@ export default function About() {
                   "Responsabilidade"
                 ].map((value, index) => (
                   <div key={index} className="text-center">
-                    <div className="bg-white/90 backdrop-blur-sm p-3 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-white/30 min-h-[70px] flex items-center justify-center w-full">
-                      <div className="text-xs md:text-sm font-medium text-primary text-center leading-tight px-1 word-break: break-word">{value}</div>
+                    <div className="bg-white/90 backdrop-blur-sm p-3 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105 border border-white/30 flex items-center justify-center w-full">
+                      <div className="text-xs md:text-sm font-medium text-primary text-center leading-tight px-2 whitespace-normal break-words">{value}</div>
                     </div>
                   </div>
                 ))}
