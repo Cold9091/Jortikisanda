@@ -147,10 +147,7 @@ export default function Plans() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              onClick={() => {
-                const element = document.getElementById("contato");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={() => window.location.href = 'tel:+244932036524'}
               className="text-white px-8 py-4 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105"
               style={{backgroundColor: '#dc6014'}}
             >
