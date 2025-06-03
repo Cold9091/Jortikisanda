@@ -277,12 +277,16 @@ export default function ContactPage() {
                   </div>
                 </div>
                 
-                <div className="h-64 bg-gradient-to-r from-primary/20 to-blue-900/20 rounded-lg flex items-center justify-center border border-gray-200">
-                  <div className="text-center text-gray-600">
-                    <MapPin className="w-16 h-16 mx-auto mb-4 text-primary" />
-                    <p className="text-gray-800">Mapa da localização</p>
-                    <p className="text-sm">Luanda, Angola</p>
-                  </div>
+                <div className="h-96 rounded-lg overflow-hidden border border-gray-200">
+                  <iframe
+                    src="https://maps.google.com/maps?q=-8.812885890108406,13.226698730243749&hl=pt&z=16&amp;output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border:0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
             </div>
