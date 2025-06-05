@@ -96,8 +96,8 @@ export default function WhyChooseUs() {
                   <span className="text-primary font-semibold">MJ</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-primary">Maria João Silva</div>
-                  <div className="text-sm text-gray-500">CEO, TechAngola Lda</div>
+                  <div className="font-semibold text-primary">Fernando Alexandre</div>
+                  <div className="text-sm text-gray-500">CEO</div>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function WhyChooseUs() {
                   <span className="text-primary font-semibold">AC</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-primary">António Carlos</div>
+                  <div className="font-semibold text-primary">Rui de Oliveira</div>
                   <div className="text-sm text-gray-500">Diretor, ComercialPlus</div>
                 </div>
               </div>
@@ -136,7 +136,7 @@ export default function WhyChooseUs() {
                   <span className="text-primary font-semibold">LF</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-primary">Luísa Fernandes</div>
+                  <div className="font-semibold text-primary">Julio César</div>
                   <div className="text-sm text-gray-500">Sócia, Consultoria LF</div>
                 </div>
               </div>
