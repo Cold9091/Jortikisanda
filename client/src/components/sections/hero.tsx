@@ -231,7 +231,7 @@ export default function Hero() {
             <div className="text-center hover-lift">
               <div className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl">
                 <div className="text-gold">
-                  <AnimatedCounter end={15} suffix="+" />
+                  <AnimatedCounter end={10} suffix="+" />
                 </div>
                 <div className="text-gray-600 font-medium">Anos de Experiência</div>
                 <div className="text-sm text-gray-500 mt-1">No mercado angolano</div>
@@ -249,7 +249,7 @@ export default function Hero() {
             <div className="text-center hover-lift">
               <div className="bg-white/95 backdrop-blur-sm p-8 rounded-3xl shadow-xl">
                 <div className="text-purple-600">
-                  <AnimatedCounter end={50} suffix="+" />
+                  <AnimatedCounter end={10} suffix="+" />
                 </div>
                 <div className="text-gray-600 font-medium">Profissionais</div>
                 <div className="text-sm text-gray-500 mt-1">Certificados e experientes</div>
