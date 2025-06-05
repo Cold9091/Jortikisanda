@@ -109,8 +109,8 @@ export default function About() {
                   <Award className="text-green-600" size={20} />
                 </div>
                 <div>
-                  <div className="text-sm font-semibold text-gray-800">Certificados</div>
-                  <div className="text-xs text-gray-600">ISO 9001:2015</div>
+                  <div className="text-sm font-semibold text-gray-800">Licenciados</div>
+                  <div className="text-xs text-gray-600">OCPCA</div>
                 </div>
               </div>
             </div>
