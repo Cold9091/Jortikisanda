@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <div className="font-semibold text-primary">Rui de Oliveira</div>
-                  <div className="text-sm text-gray-500">Diretor, ComercialPlus</div>
+                  <div className="text-sm text-gray-500">Diretor</div>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function WhyChooseUs() {
                 </div>
                 <div>
                   <div className="font-semibold text-primary">Julio César</div>
-                  <div className="text-sm text-gray-500">Sócia, Consultoria LF</div>
+                  <div className="text-sm text-gray-500"></div>
                 </div>
               </div>
             </div>
@@ -149,11 +149,7 @@ export default function WhyChooseUs() {
           <div className="inline-flex items-center justify-center space-x-8 p-8 bg-white/95 backdrop-blur-sm rounded-3xl border border-white/20">
             <div className="flex items-center">
               <CheckCircle className="text-green-600 mr-2" size={24} />
-              <span className="text-primary font-semibold">Certificação ISO 9001</span>
-            </div>
-            <div className="flex items-center">
-              <CheckCircle className="text-green-600 mr-2" size={24} />
-              <span className="text-primary font-semibold">Licenciados OCC</span>
+              <span className="text-primary font-semibold">Licenciados OCPCA</span>
             </div>
             <div className="flex items-center">
               <CheckCircle className="text-green-600 mr-2" size={24} />
