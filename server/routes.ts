@@ -32,7 +32,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(contacts);
     } catch (error) {
       res.status(500).json({ 
-        message: "Erro ao buscar contatos" 
+        message: "Erro ao buscar contactos" 
       });
     }
   });

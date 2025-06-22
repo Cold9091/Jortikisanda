@@ -103,9 +103,9 @@ export default function ContactPage() {
         <section className="py-20 bg-gradient-to-br from-primary/90 via-blue-800/90 to-blue-900/90">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-5xl font-bold mb-6 text-white">Entre em Contato</h1>
+              <h1 className="text-5xl font-bold mb-6 text-white">Entre em Contacto</h1>
               <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
-                Estamos prontos para ajudar sua empresa a crescer. Entre em contato conosco 
+                Estamos prontos para ajudar sua empresa a crescer. Entre em contacto conosco 
                 e descubra como podemos transformar sua gestão contábil e fiscal.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -155,7 +155,7 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-4">
-                Por Que Entrar em Contato Conosco?
+                Por Que Entrar em Contacto Conosco?
               </h2>
               <p className="text-xl text-blue-100">
                 Veja os benefícios de trabalhar com a JortikiSanda

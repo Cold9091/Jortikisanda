@@ -26,7 +26,7 @@ export default function Contact() {
     onSuccess: () => {
       toast({
         title: "Mensagem enviada!",
-        description: "Obrigado pela sua mensagem! Entraremos em contato em breve.",
+        description: "Obrigado pela sua mensagem! Entraremos em contacto em breve.",
       });
       setFormData({
         name: "",
@@ -113,10 +113,10 @@ Mensagem: ${formData.message}`;
             Fale Conosco
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6 section-divider pt-6">
-            Entre em Contato
+            Entre em Contacto
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Estamos prontos para ajudar sua empresa a crescer e alcançar novos patamares de sucesso. Entre em contato conosco!
+            Estamos prontos para ajudar sua empresa a crescer e alcançar novos patamares de sucesso. Entre em contacto conosco!
           </p>
         </div>
         
@@ -223,7 +223,7 @@ Mensagem: ${formData.message}`;
             <Card className="glass-effect border-0 shadow-2xl">
               <CardContent className="p-10">
                 <h3 className="text-3xl font-semibold font-montserrat text-primary mb-8">
-                  Informações de Contato
+                  Informações de Contactos
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -283,7 +283,7 @@ Mensagem: ${formData.message}`;
             <Card className="glass-effect border-0 shadow-2xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold font-montserrat text-primary mb-6">
-                  Contato Rápido
+                  Contacto Rápido
                 </h3>
                 <div className="space-y-4">
                   <Button

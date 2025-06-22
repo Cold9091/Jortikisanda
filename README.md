@@ -57,11 +57,11 @@ O projeto já está configurado com:
 
 - Site responsivo e moderno
 - Seção "Sobre Nós" com carrossel de imagens
-- Formulário de contato funcional
+- Formulário de contacto funcional
 - Links para redes sociais
 - Design otimizado para dispositivos móveis
 
-## 📞 Contato
+## 📞 Contacto
 
 - **Email**: Jortikisanda@gmail.com
 - **Telefone**: +244 939 103 175 & +244 932 036 524

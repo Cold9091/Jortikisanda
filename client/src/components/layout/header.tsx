@@ -103,7 +103,7 @@ export default function Header() {
                 href="/contato"
                 className="bg-gradient-to-r from-primary to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
-                Contato
+                Contacto
               </Link>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function Header() {
                 isActive("/contato") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
-              Contato
+              Contacto
             </Link>
           </div>
         </div>

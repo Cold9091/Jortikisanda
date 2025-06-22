@@ -98,7 +98,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold font-montserrat mb-4 text-white">Contato</h4>
+            <h4 className="text-lg font-semibold font-montserrat mb-4 text-white">Contacto</h4>
             <ul className="space-y-2 text-blue-100">
               <li className="flex items-center">
                 <Phone size={16} className="mr-2" />

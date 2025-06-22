@@ -127,7 +127,7 @@ export default function Home() {
             <div className="text-center mt-16">
               <Link href="/contato">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-blue-700 text-white px-12 py-4 text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-                  Entre em Contato Conosco
+                  Entre em Contacto Conosco
                 </Button>
               </Link>
             </div>

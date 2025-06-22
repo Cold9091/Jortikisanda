@@ -61,7 +61,7 @@ export default function BlogPost() {
         <h2>Como a JortikiSanda Pode Ajudar</h2>
         <p>Nossa equipe de especialistas está totalmente atualizada com todas as mudanças na legislação fiscal. Oferecemos consultoria especializada para garantir que sua empresa esteja em total conformidade com as novas regras.</p>
 
-        <p>Entre em contato conosco para uma avaliação gratuita e descubra como podemos ajudar sua empresa a navegar pelas mudanças na legislação fiscal de 2024.</p>
+        <p>Entre em contacto conosco para uma avaliação gratuita e descubra como podemos ajudar sua empresa a navegar pelas mudanças na legislação fiscal de 2024.</p>
       `,
       tags: ["Legislação", "IRT", "IVA", "Fiscal", "Angola"]
     },
@@ -253,7 +253,7 @@ export default function BlogPost() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contato">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg transition-all duration-300">
-                  Entre em Contato
+                  Entre em Contacto
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>

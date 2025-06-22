@@ -216,7 +216,7 @@ export default function Services() {
                 Pronto para Transformar sua Empresa?
               </h3>
               <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Entre em contato conosco hoje mesmo e descubra como podemos ajudar sua empresa a alcançar novos patamares de sucesso.
+                Entre em contacto conosco hoje mesmo e descubra como podemos ajudar sua empresa a alcançar novos patamares de sucesso.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 

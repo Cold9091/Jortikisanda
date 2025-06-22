@@ -87,8 +87,8 @@ export default function FAQPage() {
       icon: "🎧",
       questions: [
         {
-          question: "Como posso entrar em contato com vocês?",
-          answer: "Você pode entrar em contato através dos telefones +244 939 103 175 ou +244 932 036 524, pelos emails Jortikisanda@gmail.com ou Jsescritoriocontabilidade@gmail.com, ou pelo nosso formulário de contato no site."
+          question: "Como posso entrar em contacto com vocês?",
+          answer: "Você pode entrar em contacto através dos telefones +244 939 103 175 ou +244 932 036 524, pelos emails Jortikisanda@gmail.com ou Jsescritoriocontabilidade@gmail.com, ou pelo nosso formulário de contacto no site."
         },
         {
           question: "Qual o horário de funcionamento?",
@@ -208,7 +208,7 @@ export default function FAQPage() {
                   </h3>
                   <p className="text-muted-foreground">
                     Não encontramos perguntas relacionadas ao termo "{searchTerm}". 
-                    Tente usar palavras-chave diferentes ou entre em contato conosco.
+                    Tente usar palavras-chave diferentes ou entre em contacto conosco.
                   </p>
                 </div>
               )
@@ -224,7 +224,7 @@ export default function FAQPage() {
                 Não Encontrou sua Resposta?
               </h2>
               <p className="text-xl text-white/90">
-                Entre em contato conosco através dos canais abaixo
+                Entre em contacto conosco através dos canais abaixo
               </p>
             </div>
 
@@ -244,7 +244,7 @@ export default function FAQPage() {
             <div className="text-center">
               <Link href="/contato">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-blue-700 text-white px-12 py-4 text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
-                  Formulário de Contato Completo
+                  Formulário de Contacto Completo
                 </Button>
               </Link>
             </div>

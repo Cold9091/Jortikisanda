@@ -226,7 +226,7 @@ export default function ServicesPage() {
               Pronto para Transformar sua Empresa?
             </h2>
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-              Entre em contato conosco e descubra como podemos ajudar seu negócio a crescer
+              Entre em contacto conosco e descubra como podemos ajudar seu negócio a crescer
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contato">
