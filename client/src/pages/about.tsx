@@ -120,7 +120,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <Link href="/contato">
+              <Link href="/contacto">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-blue-700 text-white px-12 py-4 text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
                   Solicitar Orçamento
                 </Button>

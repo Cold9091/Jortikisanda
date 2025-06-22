@@ -104,7 +104,7 @@ export default function Hero() {
   };
 
   const scrollToContact = () => {
-    const element = document.getElementById("contato");
+    const element = document.getElementById("contacto");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }

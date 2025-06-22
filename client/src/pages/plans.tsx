@@ -276,7 +276,7 @@ export default function PlansPage() {
               Entre em contacto conosco para uma consultoria gratuita e escolha o plano ideal
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contato">
+              <Link href="/contacto">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg transition-all duration-300">
                   <Phone className="w-5 h-5 mr-2" />
                   Falar com Consultor

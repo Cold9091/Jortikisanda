@@ -238,7 +238,7 @@ export default function FiscalCalendar() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => {
-                const element = document.getElementById("contato");
+                const element = document.getElementById("contacto");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
               className="bg-gold text-primary px-8 py-4 rounded-2xl font-semibold hover:bg-yellow-400 transition-all duration-300 hover:scale-105"

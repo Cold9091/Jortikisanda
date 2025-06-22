@@ -167,7 +167,7 @@ export default function FAQ() {
               </p>
               <button 
                 onClick={() => {
-                  const element = document.getElementById("contato");
+                  const element = document.getElementById("contacto");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105 text-white"

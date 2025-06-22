@@ -229,7 +229,7 @@ export default function ServicesPage() {
               Entre em contacto conosco e descubra como podemos ajudar seu negócio a crescer
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contato">
+              <Link href="/contacto">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg transition-all duration-300">
                   Solicitar Orçamento
                   <ArrowRight className="w-5 h-5 ml-2" />

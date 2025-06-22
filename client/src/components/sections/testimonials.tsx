@@ -93,7 +93,7 @@ export default function Testimonials() {
             </p>
             <button 
               onClick={() => {
-                const element = document.getElementById("contato");
+                const element = document.getElementById("contacto");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
               className="text-white px-8 py-4 rounded-2xl font-semibold hover:opacity-90 transition-all duration-300 hover:scale-105"

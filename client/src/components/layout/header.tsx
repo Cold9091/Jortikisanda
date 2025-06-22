@@ -100,7 +100,7 @@ export default function Header() {
                 FAQ
               </Link>
               <Link
-                href="/contato"
+                href="/contacto"
                 className="bg-gradient-to-r from-primary to-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg hover:scale-105"
               >
                 Contacto
@@ -188,10 +188,10 @@ export default function Header() {
               FAQ
             </Link>
             <Link
-              href="/contato"
+              href="/contacto"
               onClick={() => setIsMenuOpen(false)}
               className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left ${
-                isActive("/contato") ? "text-orange-accent" : "text-white hover:text-orange-accent"
+                isActive("/contacto") ? "text-orange-accent" : "text-white hover:text-orange-accent"
               }`}
             >
               Contacto

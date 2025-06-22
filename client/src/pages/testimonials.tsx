@@ -220,7 +220,7 @@ export default function TestimonialsPage() {
               Transforme a gestão da sua empresa como centenas de outros empresários já fizeram
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contato">
+              <Link href="/contacto">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg transition-all duration-300">
                   Começar Agora
                   <ArrowRight className="w-5 h-5 ml-2" />

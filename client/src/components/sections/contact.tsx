@@ -99,7 +99,7 @@ Mensagem: ${formData.message}`;
   };
 
   return (
-    <section id="contato" className="py-24 bg-gradient-to-br from-primary via-blue-800 to-blue-900 text-white relative overflow-hidden">
+    <section id="contacto" className="py-24 bg-gradient-to-br from-primary via-blue-800 to-blue-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gold rounded-full filter blur-3xl animate-float"></div>
@@ -302,7 +302,7 @@ Mensagem: ${formData.message}`;
                   </Button>
                   <Button
                     onClick={() => {
-                      const element = document.getElementById("contato");
+                      const element = document.getElementById("contacto");
                       if (element) element.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="w-full bg-gold text-primary hover:bg-yellow-400 justify-start py-4 rounded-xl hover:scale-105 transition-all duration-300"
