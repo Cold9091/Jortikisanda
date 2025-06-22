@@ -102,7 +102,6 @@ export default function FAQ() {
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
                   className="w-full px-8 py-6 text-left flex items-center justify-between rounded-2xl transition-colors duration-300"
-                  style={{'&:hover': {backgroundColor: '#dc6014', opacity: 0.05}}}
                   onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(220, 96, 20, 0.05)'}
                   onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                 >
